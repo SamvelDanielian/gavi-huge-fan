@@ -33,8 +33,7 @@ If you'd like to run this project locally:
 1. Clone the repo:
    ```bash
    git clone [https://github.com/SamvelDanielian/gavi-huge-fan.git](https://github.com/SamvelDanielian/gavi-huge-fan.git)
-2. Navigate to the directory:
-    cd gavi-huge-fan   
+2. Navigate to the directory.  
 3. Open index.html in your browser.
 
 ## 🤝 Community & Support

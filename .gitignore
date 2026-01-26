@@ -2,20 +2,6 @@
 node_modules/
 bower_components/
 
-# Media files (Images, videos, etc.)
-*.jpg
-*.JPG
-*.jpeg
-*.png
-*.gif
-*.mp4
-*.zip
-*.svg
-*.jfif
-*.MOV
-*.MP4
-assets/raw_media/
-
 # Environment variables (Secrets and API keys!)
 .env
 
@@ -25,3 +11,7 @@ Thumbs.db
 
 # Ignore VS Code internal settings and debug configs
 .vscode/
+
+# Ignore videos with over GitHub's maximum limit
+images/GHF2.18.mp4
+images/GHF2.19.mp4
