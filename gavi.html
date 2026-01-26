@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gavi | Stats & Bio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="site-title">
+    <span data-i18n="siteTitle">PABLO GAVI'S HUGE FAN</span>
+  </div>
+
+
+  <nav class="nav-center">
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="navHome">HOME</a></li>
+      <li><a href="news.html" data-i18n="navNews">NEWS</a></li>
+      <li><a href="matches.html" data-i18n="navMatches">MATCHES</a></li>
+      <li><a href="trainings.html" data-i18n="navTrainings">TRAININGS</a></li>
+      <li><a href="gavi.html" data-i18n="navGavi">GAVI</a></li>
+      <li><a href="edits.html" data-i18n="navEdits">EDITS</a></li>
+    </ul>
+
+    <div class="flags">
+      <img src="https://flagcdn.com/es.svg" onclick="setLanguage('es')" class="flag" id="flag-es">
+      <img src="https://flagcdn.com/us.svg" onclick="setLanguage('en')" class="flag" id="flag-en">
+    </div>
+  </nav>
+</header>
+
+<section class="gavi-hero">
+    <video class="gavi-hero-video" autoplay muted loop playsinline>
+        <source src="images/GHF2.18.mp4" type="video/mp4">
+    </video>
+
+    <div class="gavi-hero-content">
+        <h1 class="gavi-hero-title">WELCOME TO GAVI'S WORLD</h1>
+        <p class="gavi-hero-subtitle">Everything about Pablo Gavi in one place</p>
+        <div class="scroll-down"
+            onclick="document.getElementById('biography').scrollIntoView({ behavior: 'smooth' });">
+        </div>
+    </div>
+</section>
+
+<section id="all-time-stats" class="alltime-section">
+
+  <div class="alltime-inner">
+
+    <header class="alltime-header">
+      <p class="alltime-kicker">ALL-TIME STATS</p>
+      <h2 class="alltime-title">Numbers that already feel unreal</h2>
+      <p class="alltime-subtitle">
+        Senior competitive matches · As of December&nbsp;2025
+      </p>
+    </header>
+
+    <div class="gavi-stats-rotator">
+
+      <article class="alltime-card club-barca gavi-stats-card active">
+        <img class="gavi-club-emblem" src="images/barcelonaemblem.jpg" alt="FC Barcelona Logo">
+        <div class="alltime-card-tag">CLUB</div>
+        <h3 class="alltime-card-title">FC&nbsp;Barcelona</h3>
+
+        <div class="alltime-main-stat">
+          <span class="stat-number" data-stat-target="155">0</span>
+          <span class="stat-label-main">Appearances</span>
+        </div>
+
+        <div class="alltime-substats">
+          <div class="substat">
+            <span class="substat-number stat-number" data-stat-target="10">0</span>
+            <span class="substat-label">Goals</span>
+          </div>
+          <div class="substat">
+            <span class="substat-number stat-number" data-stat-target="18">0</span>
+            <span class="substat-label">Assists</span>
+          </div>
+          <div class="substat">
+            <span class="substat-number stat-number" data-stat-target="5">0</span>
+            <span class="substat-label">Trophies</span>
+          </div>
+        </div>
+
+        <p class="alltime-note">
+          Data from official source with Barça first team: transfermarkt.com
+        </p>
+      </article>
+
+      <article class="alltime-card club-spain gavi-stats-card">
+        <img class="gavi-club-emblem" src="images/spainemblem.jpg" alt="Spain Logo">
+        <div class="alltime-card-tag">COUNTRY</div>
+        <h3 class="alltime-card-title">Spain National Team</h3>
+
+        <div class="alltime-main-stat">
+          <span class="stat-number" data-stat-target="28">0</span>
+          <span class="stat-label-main">Caps</span>
+        </div>
+
+        <div class="alltime-substats">
+          <div class="substat">
+            <span class="substat-number stat-number" data-stat-target="5">0</span>
+            <span class="substat-label">Goals</span>
+          </div>
+          <div class="substat">
+            <span class="substat-number">1</span>
+            <span class="substat-label">World Cup Goal</span>
+          </div>
+          <div class="substat">
+            <span class="substat-number">1</span>
+            <span class="substat-label">Trophies</span>
+          </div>
+        </div>
+
+        <p class="alltime-note">
+          Data from official source with Spain national team: transfermarkt.com
+        </p>
+      </article>
+
+    </div>
+
+    <div class="alltime-tickers">
+
+      <div class="ticker-row ticker-row-1">
+        <div class="ticker-track">
+          <span>BARCELONA · 155 APPS · 10 GOALS · 18 ASSISTS · LA MASIA PRODUCT · GOLDEN BOY · KOPA TROPHY ·</span>
+          <span>BARCELONA · 155 APPS · 10 GOALS · 18 ASSISTS · LA MASIA PRODUCT · GOLDEN BOY · KOPA TROPHY ·</span>
+        </div>
+      </div>
+
+      <div class="ticker-row ticker-row-2">
+        <div class="ticker-track">
+          <span>WORLD CUP MVP · SPAIN · 28 CAPS · 5 GOALS · WORLD CUP GOALSCORER · MIDFIELD LEADER · FUTURE OF LA ROJA ·</span>
+          <span>WORLD CUP MVP · SPAIN · 28 CAPS · 5 GOALS · WORLD CUP GOALSCORER · MIDFIELD LEADER · FUTURE OF LA ROJA ·</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="biography" class="bio-section">
+<video class="bio-video-bg"
+         src="images/gavi-ballplay.mp4"
+         autoplay
+         muted
+         loop
+         playsinline>
+  </video>  
+  <div class="bio-overlay"></div>
+  <div class="bio-inner">
+    <p class="bio-kicker">BIOGRAPHY</p>
+    <h2 class="bio-title">From Los Palacios to the world</h2>
+    <p class="bio-subtitle">
+      The story of how a kid from a small Andalusian town became the fearless heart of
+      Barcelona and Spain.
+    </p>
+  </div>
+
+  <div class="bio-timeline">
+
+    <div class="bio-row left fade-in">
+        <div class="bio-block">
+            <div class="bio-year">2004</div>
+            <h3 class="bio-heading">Los Palacios y Villafranca</h3>
+            <p class="bio-text">
+            Pablo Martín Páez Gavira was born on August 5, 2004, in Los Palacios y Villafranca,
+            a small Andalusian town known for producing football talent.
+            He grew up in a humble, hard-working family: his father Pablo worked long shifts,
+            while his mother Gavira became the emotional pillar of the home.
+            </p>
+        </div>
+        <div class="bio-media-card">
+            <img src="images/bio2.JPG" alt="Young Gavi with a ball">
+            <span class="bio-media-chip">Los Palacios · 2004</span>
+        </div>
+    </div>
+
+    <div class="bio-row right fade-in">
+    <div class="bio-block">
+      <div class="bio-year">2004–2013</div>
+      <h3 class="bio-heading">Tiny kid, huge intensity</h3>
+      <p class="bio-text">
+        From the age of 4, Gavi played football everywhere — streets, schoolyards,
+        dirt patches behind buildings. Neighbors remember him dribbling through obstacles
+        he built from stones and bottles, repeating plays again and again if a pass
+        wasn’t perfect.
+        <br><br>
+        Coaches at his first club, La Liara Balompié, described him simply as:
+        <span class="bio-quote">“Tiny kid, huge intensity.”</span>
+      </p>
+    </div>
+        <div class="bio-media-card">
+            <img src="images/bio6.jfif" alt="Young Gavi with a ball">
+            <span class="bio-media-chip">La Liara Balompie · 2012</span>
+        </div>
+    </div>
+
+    <div class="bio-row left fade-in">
+    <div class="bio-block">
+      <div class="bio-year">2013–2015</div>
+      <h3 class="bio-heading">Andalusia's hidden gem</h3>
+      <p class="bio-text">
+        As his technical level exploded, Sevilla FC scouts noticed him and signed him
+        to their academy. Andalusia was far from the spotlight: hard pitches, dusty boots,
+        and long drives from his parents every single week so he could chase his dream.
+        <br><br>
+        One coach remembers:
+        <span class="bio-quote">“Other kids wanted to score goals. Gavi only wanted the ball. Every ball.”</span>
+      </p>
+    </div>
+        <div class="bio-media-card">
+            <img src="images/bio4.jpg" alt="Young Gavi with a ball">
+            <span class="bio-media-chip">Won with Betis · 2014</span>
+        </div>
+    </div>
+
+    <div class="bio-row right fade-in">
+    <div class="bio-block">
+      <div class="bio-year">2015</div>
+      <h3 class="bio-heading">La Masia: leaving home at 11</h3>
+      <p class="bio-text">
+        At 11, FC Barcelona signed Gavi. The decision changed everything: the family
+        moved hundreds of kilometres, leaving behind friends and familiar streets.
+        <br><br>
+        At La Masia he:
+        <br>• lived in the dormitory with other kids  
+        • studied in the mornings  
+        • trained every afternoon  
+        • watched hours of football at night
+        <br><br>
+        Coaches immediately saw elite competitiveness, fearless duels, rare vision,
+        and unusual maturity.
+      </p>
+    </div>
+        <div class="bio-media-card">
+            <img src="images/bio7.jpg" alt="Young Gavi with a ball">
+            <span class="bio-media-chip">New Home · 2015</span>
+        </div>
+    </div>
+
+    <div class="bio-row left fade-in">
+    <div class="bio-block">
+      <div class="bio-year">2016–2020</div>
+      <h3 class="bio-heading">Lightning through the academy</h3>
+      <p class="bio-text">
+        Gavi tore through the youth teams:
+        <br>• U15 standout  
+        • U16 captain material  
+        • promoted early to U19  
+        • then to Barça B
+        <br><br>
+        Analysts compared him to Iniesta’s bravery, prime Xavi’s intensity and
+        Gattuso’s duels — but insisted:
+        <span class="bio-quote">“Gavi is not the next anyone. He is something new.”</span>
+      </p>
+    </div>
+        <div class="bio-media-card">
+            <img src="images/bio8.jpg" alt="Young Gavi with a ball">
+            <span class="bio-media-chip">La Masia · 2017</span>
+        </div>
+    </div>
+
+    <div class="bio-row right fade-in">
+    <div class="bio-block">
+      <div class="bio-year">2021</div>
+      <h3 class="bio-heading">Seventeen and fearless</h3>
+      <p class="bio-text">
+        At 17, Ronald Koeman called him up for preseason. Players twice his size
+        bounced off him. He demanded the ball from Busquets and dribbled past
+        world-class defenders like it was nothing.
+        <br><br>
+        By autumn he was:
+        <br>• one of Barça’s youngest debutants  
+        • a regular starter  
+        • already a fan favourite for his courage and fight
+        <br><br>
+        Xavi would say later:
+        <span class="bio-quote">“Gavi has a heart the size of a planet.”</span>
+      </p>
+    </div>
+        <div class="bio-media-card">
+            <img src="images/bio9.jpg" alt="Young Gavi with a ball">
+            <span class="bio-media-chip">Debut · 2021</span>
+        </div>
+    </div>
+
+    <div class="bio-row left fade-in">
+    <div class="bio-block">
+      <div class="bio-year">2022</div>
+      <h3 class="bio-heading">Golden Boy & world stage</h3>
+      <p class="bio-text">
+        2022 was the year the world understood how special he was.
+        Gavi became Golden Boy and Kopa Trophy winner, a leader in Spain’s midfield at 18,
+        and one of the youngest ever World Cup goalscorers.
+        <br><br>
+        His goal vs Costa Rica, replayed millions of times, showed not just skill, but
+        maturity, power and identity.
+      </p>
+    </div>
+        <div class="bio-media-card">
+            <img src="images/bio10.JPG" alt="Young Gavi with a ball">
+            <span class="bio-media-chip">Kopa Trophy · 2022</span>
+        </div>
+    </div>
+
+    <div class="bio-row right fade-in">
+    <div class="bio-block">
+      <div class="bio-year">2023 →</div>
+      <h3 class="bio-heading">Future of Barcelona football</h3>
+      <p class="bio-text">
+        Spain trusted Gavi with responsibilities usually given to veterans. He pressed
+        like a monster, won duels and played with fire, especially in El Clásico,
+        where his passion turned him into a cult hero.
+        <br><br>
+        Many analysts say:
+        <span class="bio-quote">“No one represents the future of Spanish football more than Gavi.”</span>
+      </p>
+    </div>
+        <div class="bio-media-card">
+            <img src="images/bio11.jpg" alt="Young Gavi with a ball">
+            <span class="bio-media-chip">With Lamine · 2025</span>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="family" class="family-section">
+  <div class="family-beam beam-left"></div>
+  <div class="family-beam beam-right"></div>
+
+  <header class="family-header fade-in">
+    <p class="family-kicker">FAMILY</p>
+    <h2 class="family-title">The people behind Pablo</h2>
+  </header>
+
+  <div class="family-story-block fade-in">
+    <div class="family-media-wrap">
+      <div class="family-media-frame">
+        <img src="images/gavi-parents.jpg" alt="Gavi with his parents">
+        <div class="family-media-caption">Barcelona · August 5 2024</div>
+        <div class="family-quote">
+          “Pablo's family celebrates Pablo's birthday”
+        </div>
+      </div>
+    </div>
+    <div class="family-story-text">
+      <div class="family-mini-tag">01 — PARENTS</div>
+      <h3 class="family-heading">
+        Pablo Paez &amp; Aurora Gavira
+        <span class="family-underline"></span>
+      </h3>
+      <p class="family-text">
+        On the left is Pablo's father, Pablo Páez. 
+        Next to him is Aurora Belén Gavira, Pablo and Aurora's 
+        mother. Aurora Páez Gavira is Pablo's sister.
+        Gavi comes from a close-knit, working-class family that 
+        played an instrumental role in nurturing his talent.
+        When Barcelona’s offer came, the decision to allow their young son 
+        to move to La Masia represented a profound act of faith and sacrifice. 
+        This family foundation has remained crucial to Gavi’s development.
+      </p>
+      <div class="family-pill-row">
+        <span class="family-pill">Parents</span>
+        <span class="family-pill">Dad & Mom</span>
+        <span class="family-pill">Sister</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="family-story-block reverse fade-in">
+    <div class="family-media-wrap is-video">
+      <div class="family-media-frame">
+        <video src="images/aurorarepresentation4.MOV"
+               autoplay
+               muted
+               loop
+               playsinline></video>
+        <div class="family-media-caption">Aurora & Pablo · edit by GHF</div>
+        <div class="family-media-overlay"></div>
+        <div class="family-quote">
+            “Find this edit on our instagram”
+        </div>
+      </div>
+    </div>
+    <div class="family-story-text">
+      <div class="family-mini-tag">02 — SISTER</div>
+      <h3 class="family-heading">
+        Pablo's sister
+        <span class="family-underline"></span>
+      </h3>      
+      <p class="family-text">
+        Aurora Paez Gavira, Pablo's sister who was born on February 27, 2003 and 
+        raised in the Seville region of Spain before moving to Barcelona.
+        She studied primary education in the Marismas region of Spain. 
+        Aurora graduated from university in 2025. 
+        <br>Aurora and Gavi <em>in my edit.</em>
+      </p>
+      <div class="family-pill-row">
+        <span class="family-pill">Aurora Paez</span>
+        <span class="family-pill">Gavira</span>
+        <span class="family-pill">Best Sister in the world</span>
+      </div>      
+    </div>
+  </div>
+
+  <div class="family-story-block fade-in">
+    <div class="family-media-wrap">
+      <div class="family-media-frame">
+        <video src="images/anapelayozrepresentation.MOV"
+               autoplay
+               muted
+               loop
+               playsinline></video>
+        <div class="family-media-caption">La Liga Celebration · 2025</div>
+        <div class="family-quote">
+            “Gavi publicly shows his girlfriend.”
+        </div>
+      </div>
+    </div>
+    <div class="family-story-text">
+      <div class="family-mini-tag">03 — GIRLFRIEND</div>
+      <h3 class="family-heading">
+        Anita Pelayo
+        <span class="family-underline"></span>
+      </h3>      
+      <p class="family-text">
+        Anita Pelayo or Ana Pelayo, Pablo's girlfriend who was born on October 24, 2002 in Seville, Spain. 
+        She is a young and rising social media influencer and student from Seville, Spain.
+        Currently she is a student of University of Seville. Ana reportedly met through 
+        Pablo's sister and has been in a relationship with Pablo since 2022. 
+        <br>Here in video Pablo introduces Ana to Ansu Fati <em>and then Pablo's father comes to wave Ansu.</em>
+      </p>
+      <div class="family-pill-row">
+        <span class="family-pill">Anita Pelayo</span>
+        <span class="family-pill">Ana</span>
+        <span class="family-pill">Best Couple</span>
+      </div>      
+    </div>
+  </div>
+
+</section>
+
+<section id="press" class="press">
+
+  <div class="press-hero">
+    <div class="press-hero-bg" style="--pressHero:url('images/gavi-interview.jpg');"></div>
+    <div class="press-hero-overlay"></div>
+
+    <div class="press-hero-inner reveal">
+      <p class="press-kicker">PRESS CONFERENCE</p>
+
+      <h2 class="press-title">
+        EVERY WORD GAVI SPEAKS BECOMES HISTORY
+      </h2>
+
+      <p class="press-subtitle">SEE GAVI'S PRESS CONFERENCES BELOW.</p>
+
+      <div class="press-hero-hint">
+        <span class="press-scroll-dot"></span>
+        <span>Scroll</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="press-bumper">
+  <div class="bumper-track" id="bumperTrack">
+    <span class="bumper-text">PRESS ROOM • MIC CHECK • FLASHES • QUESTIONS • FOCUS • NO FEAR •</span>
+    <span class="bumper-text">PRESS ROOM • MIC CHECK • FLASHES • QUESTIONS • FOCUS • NO FEAR •</span>
+  </div>
+</div>
+
+<section class="press-conf">
+
+  <div class="press-conf-hero">
+    <div class="press-conf-bg" style="--confHero:url('images/firstconf.jpg');"></div>
+    <div class="press-conf-overlay"></div>
+
+    <div class="press-conf-inner reveal">
+      <p class="conf-kicker">Press Conference ahead of Barcelona and Dortmund clash</p>
+      <h3 class="conf-title">Who thinks I don't know how to play, they have no idea</h3>
+    </div>
+  </div>
+
+  <div class="press-quote-section">
+  <div class="press-quote-inner">
+
+    <p class="press-context">
+      PRESS CONFERENCE AHEAD OF BARCELONA VS DORTMUND
+    </p>
+
+    <h3 class="press-quote">
+      <span class="quote-accent">“Who thinks I don’t know how to play,</span>
+      <span class="quote-main">they have no idea.”</span>
+    </h3>
+
+    <p class="press-meta">
+      — Gavi, UEFA Champions League
+    </p>
+
+  </div>
+</div>
+
+<div class="press-transcript-wrap">
+  <article class="press-transcript">
+
+    <h4 class="transcript-title">
+      Full press conference transcript
+    </h4>
+
+    <p>
+      Speaking ahead of the Champions League quarter-final, Gavi made it clear
+      that outside criticism does not affect his confidence or his approach
+      to the game.
+    </p>
+
+    <p>
+      “I try to improve every day,” he said. “I know what I can do, and the
+      coaching staff knows it too. People who think I don’t understand the
+      game simply haven’t watched me closely enough.”
+    </p>
+
+    <p>
+      The midfielder also highlighted the importance of collective effort,
+      insisting that individual recognition means little without team success.
+    </p>
+
+    <p>
+      “In football, nothing is guaranteed. You have to work, stay humble,
+      and prove yourself every match.”
+    </p>
+
+  </article>
+</div>
+
+
+
+</div>
+
+</section>
+  
+
+<script defer src="script.js"></script>
+
+</body>
+</html>

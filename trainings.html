@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trainings | GaviHugeFan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="site-title">
+    <span data-i18n="siteTitle">PABLO GAVI'S HUGE FAN</span>
+  </div>
+
+
+
+  <nav class="nav-center">
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="navHome">HOME</a></li>
+      <li><a href="news.html" data-i18n="navNews">NEWS</a></li>
+      <li><a href="matches.html" data-i18n="navMatches">MATCHES</a></li>
+      <li><a href="trainings.html" data-i18n="navTrainings">TRAININGS</a></li>
+      <li><a href="gavi.html" data-i18n="navGavi">GAVI</a></li>
+      <li><a href="edits.html" data-i18n="navEdits">EDITS</a></li>
+    </ul>
+
+    <div class="flags">
+      <img src="https://flagcdn.com/es.svg" onclick="setLanguage('es')" class="flag" id="flag-es">
+      <img src="https://flagcdn.com/us.svg" onclick="setLanguage('en')" class="flag" id="flag-en">
+    </div>
+  </nav>
+</header>
+
+<section class="training-hero">
+    <video class="training-hero-image" autoplay muted loop playsinline>
+        <source src="images/GHF2.20.mp4" type="video/mp4">
+    </video>
+
+    <div class="training-hero-content">
+        <h1 class="training-welcome" data-i18n="welcomeTo">WELCOME TO</h1>
+
+        <h1 class="training-main-title" data-i18n="gavisTrainings">GAVI'S TRAININGS</h1>
+
+        <p class="training-subtext" data-i18n="trainingSubtitle">Exclusive daily sessions from Ciutat Esportiva</p>
+
+        <a href="#latest-training" class="training-hero-btn" data-i18n="todaysTraining">TODAY'S TRAINING</a>
+    </div>
+</section>
+
+<section id="latest-training" class="training-section">
+  <div class="training-hex-layer"></div>
+    <h1 class="training-title" data-i18n="todaysTraining">TODAY'S TRAINING</h1>
+
+    <div class="training-big-slider">
+        <img src="images/train1.jpg" class="train-img">
+        <img src="images/train2.jpg" class="train-img">
+        <img src="images/train3.jpg" class="train-img">
+        <img src="images/train4.jpg" class="train-img">
+        <img src="images/train5.jpg" class="train-img">
+    </div>
+
+    <a href="https://youtube.com/@FCBarcelona" 
+       class="training-video-btn" 
+       target="_blank" data-i18n="watchTrainingVideo">
+       WATCH TRAINING VIDEO
+    </a>
+</section>
+
+<section id="latest-training" class="training-section">
+  <div class="training-hex-layer2"></div>
+    <h1 class="training-title" data-i18n="trainingTwo">TRAINING OF NOVEMBER 30</h1>
+
+  <div class="training-big-slider">
+    <img src="images/nov301.jpg" class="train-img">
+    <img src="images/nov302.jpg" class="train-img">
+    <img src="images/nov303.jpg" class="train-img">
+    <img src="images/nov304.jpg" class="train-img">
+    <img src="images/nov305.jpg" class="train-img">
+  </div>
+
+  <a href="https://youtube.com/@FCBarcelona" 
+       class="training-video-btn" 
+       target="_blank" data-i18n="watchTrainingVideo">
+       WATCH TRAINING VIDEO
+    </a>
+</section>
+
+<section id="latest-training" class="training-section">
+  <div class="training-hex-layer"></div>
+    <h1 class="training-title" data-i18n="trainingThree">TRAINING OF MARCH 15</h1>
+
+  <video class="training-video" id="trainingVideo" controls muted playsinline preload="metadata">
+        <source src="images/GHF2.16.mp4" type="video/mp4">
+    </video>
+
+  <a href="https://youtube.com/@FCBarcelona" 
+       class="training-video-btn" 
+       target="_blank" data-i18n="watchTrainingVideo">
+       WATCH TRAINING VIDEO
+    </a>
+</section>
+
+<script defer src="script.js"></script>
+</body>
+</html>

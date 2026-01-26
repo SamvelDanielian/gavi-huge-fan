@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GaviHugeFan | Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="site-title">
+    <span data-i18n="siteTitle">PABLO GAVI'S HUGE FAN</span>
+  </div>
+
+
+
+  <nav class="nav-center">
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="navHome">HOME</a></li>
+      <li><a href="news.html" data-i18n="navNews">NEWS</a></li>
+      <li><a href="matches.html" data-i18n="navMatches">MATCHES</a></li>
+      <li><a href="trainings.html" data-i18n="navTrainings">TRAININGS</a></li>
+      <li><a href="gavi.html" data-i18n="navGavi">GAVI</a></li>
+      <li><a href="edits.html" data-i18n="navEdits">EDITS</a></li>
+    </ul>
+
+    <div class="flags">
+      <img src="https://flagcdn.com/es.svg" alt="Spanish">
+      <img src="https://flagcdn.com/us.svg" alt="English">
+    </div>
+  </nav>  
+</header>
+
+<hr class="navbar-divider">
+
+<section class="hero">
+  <img src="images/gavi-hero.jpg" alt="Gavi Hero" class="hero-image">
+
+  <div class="hero-content">
+    <h1 class="welcome" data-i18n="welcomeTo">WELCOME TO</h1>
+    <h1 class="main-title">GAVI HUGE FAN</h1>
+    <p class="subtext" data-i18n="everythingAbout">Everything about Pablo Gavi here</p>
+    <a href="#latest-news" class="hero-btn" data-i18n="latestNewsBtn">LATEST NEWS</a>
+  </div>
+</section>
+
+<div class="dynamic-separator">
+    <div class="separator-line separator-line-1"></div>
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-f5cd14f0-1c79-4ac3-989f-0db8b5a738c5" data-elfsight-app-lazy></div>
+    <div class="separator-line separator-line-2"></div>
+</div>
+
+<section class="next-match">
+  <div class="next-match-overlay"></div>
+  <div class="next-match-inner">
+    <h2 class="section-title" data-i18n="nextMatch">NEXT MATCH</h2>
+
+    <div class="match-teams">
+      <div class="team">
+        <img src="images/barca.png" alt="FC Barcelona" class="team-logo">
+        <span>FC Barcelona</span>
+      </div>
+
+      <div class="match-vs">
+        <span>VS</span>
+        <p>Elche CF</p>
+        <p class="match-date">Feb 1, 2026 — 20:00</p>
+      </div>
+
+      <div class="team">
+        <img src="images/elche.png" alt="Elche CF" class="team-logo">
+        <span>Elche CF</span>
+      </div>
+    </div>
+
+    <div class="timer">
+      <div class="timer-box">
+        <span id="days">00</span>
+        <small data-i18n="days">Days</small>
+      </div>
+      <div class="timer-box">
+        <span id="hours">00</span>
+        <small data-i18n="hours">Hours</small>
+      </div>
+      <div class="timer-box">
+        <span id="minutes">00</span>
+        <small data-i18n="minutes">Minutes</small>
+      </div>
+      <div class="timer-box">
+        <span id="seconds">00</span>
+        <small data-i18n="seconds">Seconds</small>
+      </div>
+    </div>
+
+    <a href="matches.html" class="hero-btn" data-i18n="matchDetails">Match details</a>
+  </div>
+</section>
+
+ <section class="home-section home-news" id="latest-news">
+  <div class="section-header">
+    <h2 data-i18n="latestNews">Latest News</h2>
+    <a href="news.html" class="see-all-link" data-i18n="seeAllNews">See all news →</a>
+  </div>
+
+  <div class="cards-grid">
+  <a href="news.html#article-recovery" class="card-link">
+    <article class="card">
+      <div class="card-tag" data-i18n="injuryNews">Injury News</div>
+      <h3 data-i18n="news1Title">Gavi’s recovery update</h3>
+      <p data-i18n="news1Text">Initial expectations of a January or February return have since been revised, Mundo Deportivo is now projecting his comeback to be unlikely before March</p>
+    </article>
+  </a>
+  <a href="news.html#inside-club" class="card-link">
+    <article class="card">
+      <div class="card-tag" data-i18n="insideClub">Club</div>
+      <h3 data-i18n="news2Title">Inside the Barça dressing room</h3>
+      <p data-i18n="news2Text">Gavi's delay is a huge setback for the Barcelona squad and head coach Hansi Flick, given Gavi's importance in multiple midfield roles</p>
+    </article>
+  </a>
+  <a href="news.html#exclusive" class="card-link">
+    <article class="card">
+      <div class="card-tag" data-i18n="exclusive">Exclusive</div>
+      <h3 data-i18n="news3Title">Gavi is seen near Ciutat Esportiva</h3>
+      <p data-i18n="news3Text">Gavi came Ciutat Esportiva with his father to continue his recovery proc</p>
+    </article>
+  </a>  
+  </div>
+</section>
+
+<section class="home-section home-edits">
+  <div class="section-header">
+    <h2 data-i18n="featuredEdits">Featured Edits</h2>
+    <a href="edits.html" class="see-all-link" data-i18n="seeAllEdits">See all edits →</a>
+  </div>
+
+  <div class="cards-grid edits-grid">
+
+    <div class="edit-card">
+      <div class="edit-media">
+        <img src="images/account-back.jpg" alt="Edit image">
+      </div>
+      <p data-i18n="edit1Title">Gavi Huge Fan account is back!</p>
+    </div>
+
+    <div class="edit-card video-card" id="edit-video-2">
+    <div class="edit-media">
+        <video 
+            src="images/todays-edit.MOV"
+            preload="metadata"
+            controls
+            playsinline
+            poster="images/todays-edit.jpg">
+        </video>
+    </div>
+    <p data-i18n="edit2Title">Today's edit</p>
+</div>
+   
+    <div class="edit-card">
+    <div class="edit-media">
+        <img src="images/pedri-x-gavi-collage.jpg" alt="Edit image">
+    </div>
+    <p data-i18n="edit3Title">Pedri x Gavi collage hits top</p>
+    </div>
+</section>
+
+<section class="home-section home-stats">
+  <div class="section-header">
+    <h2 data-i18n="gaviSnapshot">Gavi Snapshot</h2>
+    <a href="gavi.html" class="see-all-link" data-i18n="fullStats">Full stats & bio →</a>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-box">
+      <span class="stat-value">20</span>
+      <span class="stat-label" data-i18n="age">Age</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-value">6</span>
+      <span class="stat-label" data-i18n="number">Shirt Number</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-value" data-i18n="midfielder">Midfielder</span>
+      <span class="stat-label" data-i18n="position">Position</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-value">FC Barcelona</span>
+      <span class="stat-label" data-i18n="club">Club</span>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p data-i18n="footerMadeBy">© 2025 GaviHugeFan | Made by GHF</p>
+    <p data-i18n="footerFollow">Follow on <a href="https://instagram.com/gavihugefan" target="_blank">Instagram for fastest updates</a></p>
+  </footer>
+
+</body>
+</html>

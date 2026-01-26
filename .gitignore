@@ -1,0 +1,27 @@
+# Dependency folders (The "small files" like node_modules)
+node_modules/
+bower_components/
+
+# Media files (Images, videos, etc.)
+*.jpg
+*.JPG
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.zip
+*.svg
+*.jfif
+*.MOV
+*.MP4
+assets/raw_media/
+
+# Environment variables (Secrets and API keys!)
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code internal settings and debug configs
+.vscode/
