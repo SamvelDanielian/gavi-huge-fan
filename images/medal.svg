@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" fill="none">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4e4a6"/>
+      <stop offset="30%" style="stop-color:#d4af37"/>
+      <stop offset="60%" style="stop-color:#c9a227"/>
+      <stop offset="100%" style="stop-color:#8b6914"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c60b1e"/>
+      <stop offset="50%" style="stop-color:#ffc400"/>
+      <stop offset="100%" style="stop-color:#c60b1e"/>
+    </linearGradient>
+    <filter id="medalShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- Ribbon (Spanish flag colors) -->
+  <path d="M42 0 L58 0 L54 32 L48 28 L42 32 Z" fill="url(#ribbon)"/>
+  <path d="M42 0 L26 0 L30 32 L36 28 L42 32 Z" fill="url(#ribbon)"/>
+  <!-- Medal disc -->
+  <circle cx="50" cy="72" r="40" fill="url(#gold)" stroke="#b8860b" stroke-width="2" filter="url(#medalShadow)"/>
+  <circle cx="50" cy="72" r="36" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+  <!-- Inner star -->
+  <path d="M50 54 L52.5 64 L63 64 L55 71 L57.5 82 L50 76 L42.5 82 L45 71 L37 64 L47.5 64 Z" fill="url(#gold)" stroke="#8b6914" stroke-width="0.6" opacity="0.95"/>
+</svg>
