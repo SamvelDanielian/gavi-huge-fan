@@ -2,21 +2,21 @@
 
 Welcome to the official repository for the **Gavi's Huge Fan** website! This project is a labor of love dedicated to the heart and soul of FC Barcelona and the Spanish National Team—**Pablo Gavi**. 
 
-> **Our Story:** We started as a vibrant Instagram community with over **30,000+ followers**. Due to an unfortunate suspension by Meta, we are moving our passion to a permanent home that we control. This site will be the ultimate hub for every Gavi fan.
+> **Our Story:** We (me and my friends) started as a vibrant Instagram community with over **30,000+ followers**. Due to an unfortunate suspension by Meta, we are moving our passion to a permanent home that we control. This site will be the ultimate hub for every Gavi fan.
 
 ---
 
 ## 🚧 Project Status: Ongoing
-This project is currently **under active development**. We are building a high-performance, media-rich experience from the ground up. 
+This project is currently **under active development**. We are building a high-performance, media-rich experience from the ground up with two languages, English and Spanish. 
 
 ### 🌟 Key Features (Coming Soon)
 * **Fresh News:** Hourly updates and breaking news related to Gavi's career.
 * **Match Center:** Deep-dive statistics and examination of Gavi's past matches, season highlights, and notable performances.
-* **The Legend's Bio:** Full biographical information, career milestones, and "old memories" from his youth days.
+* **The Player's Bio:** Full biographical information, career milestones, and "old memories" from his youth days.
 * **Media Vault:** * Exclusive, custom-made Gavi edits.
     * Press conference archives.
     * Training ground updates with photos and videos.
-* **The Team:** A section dedicated to the people behind this fan project.
+* **Gavi's Family:** A subsection dedicated to the people behind Pablo Gavi.
 
 ---
 
