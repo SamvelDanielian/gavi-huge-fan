@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edits | GaviHugeFan</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
 </head>
 
@@ -13,9 +15,6 @@
   <div class="site-title">
     <span data-i18n="siteTitle">PABLO GAVI'S HUGE FAN</span>
   </div>
-
-
-
   <nav class="nav-center">
     <ul class="nav-links">
       <li><a href="index.html" data-i18n="navHome">HOME</a></li>
@@ -25,49 +24,68 @@
       <li><a href="gavi.html" data-i18n="navGavi">GAVI</a></li>
       <li><a href="edits.html" data-i18n="navEdits">EDITS</a></li>
     </ul>
-
     <div class="flags">
-      <img src="https://flagcdn.com/es.svg" id="flag-es">
-      <img src="https://flagcdn.com/us.svg" id="flag-en">
+      <img src="https://flagcdn.com/es.svg" onclick="setLanguage('es')" class="flag" id="flag-es" alt="Spanish">
+      <img src="https://flagcdn.com/us.svg" onclick="setLanguage('en')" class="flag" id="flag-en" alt="English">
     </div>
   </nav>
 </header>
 
 <hr class="navbar-divider">
 
-<section class="page-header">
-  <h1 data-i18n="featuredEdits">Featured Edits</h1>
-</section>
-
-<section class="page-content">
-  <div class="cards-grid edits-grid">
-
-    <div class="edit-card">
-      <div class="edit-media">
-        <img src="images/account-back.jpg">
-      </div>
-      <p data-i18n="edit1Title">Gavi Huge Fan account is back!</p>
-    </div>
-
-    <div class="edit-card">
-      <div class="edit-media">
-        <video src="images/todays-edit.mp4" controls></video>
-      </div>
-      <p data-i18n="edit2Title">Today's edit</p>
-    </div>
-
-    <div class="edit-card">
-      <div class="edit-media">
-        <img src="images/pedri-x-gavi-collage.jpg">
-      </div>
-      <p data-i18n="edit3Title">Pedri x Gavi collage hits top</p>
-    </div>
-
+<section class="edits-hero">
+  <div class="edits-hero-overlay"></div>
+  <div class="edits-hero-inner">
+    <p class="edits-hero-kicker" data-i18n="editsHeroKicker">EDITS BY GHF</p>
+    <h1 class="edits-hero-title edits-hero-title--animated" data-i18n="editsHeroTitle">My edits for Gavi</h1>
+    <p class="edits-hero-subtitle" data-i18n="editsHeroSubtitle">Videos and graphics made with love for the best midfielder.</p>
   </div>
 </section>
 
-<footer>
-  <p>© 2025 GaviHugeFan</p>
+<section class="edits-content">
+  <div class="edits-inner">
+    <h2 class="edits-section-title" data-i18n="editsSectionTitle">Featured edits</h2>
+    <div class="edits-cards">
+
+      <article class="edit-card-v2">
+        <div class="edit-card-media">
+          <img src="images/account-back.jpg" alt="">
+          <span class="edit-card-tag" data-i18n="editTagImage">Image</span>
+        </div>
+        <div class="edit-card-body">
+          <h3 class="edit-card-name" data-i18n="edit1Name">We are back</h3>
+          <p class="edit-card-desc" data-i18n="edit1Desc">Gavi Huge Fan account is back! Celebrating with the crew and the gorilla — a moment that started it all again.</p>
+        </div>
+      </article>
+
+      <article class="edit-card-v2 edit-card-v2--video">
+        <div class="edit-card-media">
+          <video src="images/todays-edit.MOV" controls playsinline preload="metadata" poster="images/todays-edit.jpg"></video>
+          <span class="edit-card-tag" data-i18n="editTagVideo">Video</span>
+        </div>
+        <div class="edit-card-body">
+          <h3 class="edit-card-name" data-i18n="edit2Name">Today's edit</h3>
+          <p class="edit-card-desc" data-i18n="edit2Desc">A fresh cut from training and matchday — Gavi's intensity and passion in every frame.</p>
+        </div>
+      </article>
+
+      <article class="edit-card-v2">
+        <div class="edit-card-media">
+          <img src="images/pedri-x-gavi-collage.jpg" alt="">
+          <span class="edit-card-tag" data-i18n="editTagImage">Image</span>
+        </div>
+        <div class="edit-card-body">
+          <h3 class="edit-card-name" data-i18n="edit3Name">Pedri × Gavi collage</h3>
+          <p class="edit-card-desc" data-i18n="edit3Desc">The duo that defines Barça's midfield. This collage hit the top for a reason — two friends, one dream.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p data-i18n="footerMadeBy">© 2025 GaviHugeFan | Made by GHF</p>
 </footer>
 
 </body>

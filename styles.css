@@ -778,6 +778,201 @@ body {
     border-radius: 0 0 12px 12px;
 }
 
+/* ----- Edits page (full) ----- */
+.edits-hero {
+  position: relative;
+  min-height: 42vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #060810 0%, #0a0e18 40%, #0d1220 100%);
+  overflow: hidden;
+}
+
+.edits-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 50%, rgba(0, 51, 160, 0.2) 0%, rgba(165, 0, 68, 0.08) 50%, transparent 70%);
+  pointer-events: none;
+}
+
+.edits-hero-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.edits-hero-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 5%;
+}
+
+.edits-hero-kicker {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+.edits-hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #00a2ff, #ff50ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.edits-hero-title--animated {
+  position: relative;
+  background: linear-gradient(110deg, #00a2ff 0%, #5c6cff 35%, #ff50ad 70%, #00d4aa 100%);
+  background-size: 200% auto;
+  animation: pressTitleGradient 6s ease-in-out infinite;
+}
+
+.edits-hero-title--animated::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, #00a2ff, #ff50ad);
+  border-radius: 2px;
+  opacity: 0.6;
+  animation: pressTitleShine 2.5s ease-in-out infinite;
+}
+
+.edits-hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.edits-content {
+  padding: 60px 8% 100px;
+  background: linear-gradient(180deg, #080b12 0%, #060810 100%);
+}
+
+.edits-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.edits-section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.edits-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.edit-card-v2 {
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-card-v2:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.4),
+              0 0 40px rgba(0, 162, 255, 0.15),
+              0 0 30px rgba(255, 80, 173, 0.1);
+}
+
+.edit-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #0a0a0c;
+}
+
+.edit-card-media img,
+.edit-card-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.edit-card-tag {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 6px 14px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+
+.edit-card-body {
+  padding: 24px 22px 28px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-card-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.edit-card-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .edits-cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .edits-hero {
+    min-height: 36vh;
+  }
+  .edits-content {
+    padding: 40px 6% 80px;
+  }
+}
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
