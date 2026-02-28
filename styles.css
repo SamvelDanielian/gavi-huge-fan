@@ -3506,6 +3506,57 @@ body.article-page {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.press-conf-list-header {
+  text-align: center;
+  padding: 80px 8vw 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.press-conf-list-title {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #00a2ff, #ff50ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+}
+
+.press-conf-list-subtitle {
+  font-size: 1rem;
+  opacity: 0.85;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.press-conf-block {
+  position: relative;
+}
+
+.press-conf-block + .press-conf-block {
+  margin-top: 0;
+}
+
+.press-quote-section--dark {
+  background: radial-gradient(
+      circle at top,
+      rgba(60, 50, 120, 0.18),
+      rgba(0, 0, 0, 0.9)
+    ),
+    #06050a;
+}
+
+.press-source {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-style: italic;
+}
+
 .press-transcript-wrap {
   background: #ffffff;
   padding: 110px 8vw 140px;
@@ -3556,6 +3607,71 @@ body.article-page {
   color: #000;
 }
 
+.press-quote-card {
+  max-width: 820px;
+  margin: 80px auto 120px;
+  padding: 0 8vw;
+}
+
+.press-quote-card-inner {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 48px 44px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4),
+              0 0 30px rgba(0, 136, 255, 0.2),
+              0 0 30px rgba(255, 0, 92, 0.15);
+  transition: transform 0.35s ease, box-shadow 0.4s ease;
+}
+
+.press-quote-card-inner:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5),
+              0 0 40px rgba(0, 136, 255, 0.35),
+              0 0 40px rgba(255, 0, 92, 0.25);
+}
+
+.press-quote-card-kicker {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 14px;
+}
+
+.press-quote-card-title {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  background: linear-gradient(90deg, #00a2ff, #ff50ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.press-quote-card-quote {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0 0 20px 0;
+  padding-left: 20px;
+  border-left: 4px solid;
+  border-image: linear-gradient(180deg, #00a2ff, #ff50ad) 1;
+  font-style: italic;
+}
+
+.press-quote-card-meta {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-bottom: 8px;
+}
+
+.press-quote-card-source {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
 @media (max-width: 600px) {
   .press-transcript-wrap {
     padding: 80px 6vw 100px;
@@ -3564,5 +3680,18 @@ body.article-page {
   .press-transcript::before {
     left: -16px;
     height: 90px;
+  }
+
+  .press-conf-list-header {
+    padding: 50px 6vw 40px;
+  }
+
+  .press-quote-card {
+    margin: 50px auto 80px;
+    padding: 0 5vw;
+  }
+
+  .press-quote-card-inner {
+    padding: 32px 24px;
   }
 }

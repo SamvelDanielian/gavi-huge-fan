@@ -89,7 +89,45 @@ const translations = {
     trainingSubtitle: "Exclusive daily sessions from Ciutat Esportiva",
     gavisTrainings: "GAVI'S TRAININGS",
     trainingTwo: "TRAINING OF NOVEMBER 30",
-    trainingThree: "TRAINING OF MARCH 15"
+    trainingThree: "TRAINING OF MARCH 15",
+
+    pressKicker: "PRESS CONFERENCE",
+    pressTitle: "EVERY WORD GAVI SPEAKS BECOMES HISTORY",
+    pressSubtitle: "See Gavi's press conferences below.",
+    pressScroll: "Scroll",
+    pressBumper: "PRESS ROOM • MIC CHECK • FLASHES • QUESTIONS • FOCUS • NO FEAR •",
+    pressConfListTitle: "Press conferences",
+    pressConfListSubtitle: "Official statements and post-match interviews",
+
+    conf1Kicker: "Press conference ahead of Barcelona vs Borussia Dortmund",
+    conf1Title: "Who thinks I don't know how to play, they have no idea",
+    conf1Context: "UEFA Champions League · Quarter-final",
+    conf1QuoteAccent: "Who thinks I don't know how to play,",
+    conf1QuoteMain: "they have no idea.",
+    conf1Meta: "— Gavi, UEFA Champions League",
+    transcriptTitle: "Full press conference transcript",
+    conf1Intro: "Speaking ahead of the Champions League quarter-final, Gavi made it clear that outside criticism does not affect his confidence or his approach to the game.",
+    conf1P1: "I try to improve every day. I know what I can do, and the coaching staff knows it too. People who think I don't understand the game simply haven't watched me closely enough.",
+    conf1P2: "The midfielder also highlighted the importance of collective effort, insisting that individual recognition means little without team success.",
+    conf1P3: "In football, nothing is guaranteed. You have to work, stay humble, and prove yourself every match.",
+    conf1Source: "Source: FC Barcelona / UEFA Champions League press conference",
+
+    conf2Kicker: "After Barcelona's win over Athletic Club",
+    conf2Title: "The injury was really tough — but I never stopped believing",
+    conf2Context: "La Liga · Post-match press conference",
+    conf2QuoteAccent: "The injury was really tough.",
+    conf2QuoteMain: "But I never stopped believing I would come back.",
+    conf2Meta: "— Gavi, post-match",
+    conf2Intro: "Following his return from a long-term injury, Gavi spoke emotionally about his recovery and the support from the team and fans.",
+    conf2P1: "What hurt me the most was seeing my teammates and not being able to play. But right now, all I want is to keep helping the team and enjoying every minute on the pitch.",
+    conf2P2: "I'm meeting the deadlines they set for me, and so far everything is going very well. The fans and my family have been incredible.",
+    conf2Source: "Source: FC Barcelona official press conference",
+
+    conf3Kicker: "Ahead of Champions League quarter-final",
+    conf3Title: "We're having a great season but we're not unbeatable",
+    conf3Quote: "We are putting in a great season but we don't feel unbeatable. In football you can't always win. Every day I try to improve.",
+    conf3Meta: "— Gavi, FC Barcelona",
+    conf3Source: "Source: fcbarcelona.com"
   },
 
   es: {
@@ -161,7 +199,45 @@ const translations = {
     trainingSubtitle: "Sesiones diarias exclusivas desde la Ciutat Esportiva",
     gavisTrainings: "ENTRENAMIENTOS DE GAVI",
     trainingTwo: "ENTRENAMIENTO DEL 30 DE NOVIEMBRE",
-    trainingThree: "ENTRENAMIENTO DEL 15 DE MARZO"
+    trainingThree: "ENTRENAMIENTO DEL 15 DE MARZO",
+
+    pressKicker: "RUEDA DE PRENSA",
+    pressTitle: "CADA PALABRA DE GAVI SE CONVIERTE EN HISTORIA",
+    pressSubtitle: "Las ruedas de prensa de Gavi, aquí abajo.",
+    pressScroll: "Desplazar",
+    pressBumper: "SALA DE PRENSA • MICRÓFONO • FLASHES • PREGUNTAS • ENFOQUE • SIN MIEDO •",
+    pressConfListTitle: "Ruedas de prensa",
+    pressConfListSubtitle: "Declaraciones oficiales y entrevistas tras partidos",
+
+    conf1Kicker: "Rueda de prensa previa al Barcelona – Borussia Dortmund",
+    conf1Title: "Quien piense que no sé jugar, no tiene ni idea",
+    conf1Context: "UEFA Champions League · Cuartos de final",
+    conf1QuoteAccent: "Quien piense que no sé jugar,",
+    conf1QuoteMain: "no tiene ni idea.",
+    conf1Meta: "— Gavi, UEFA Champions League",
+    transcriptTitle: "Transcripción completa de la rueda de prensa",
+    conf1Intro: "En la previa del partido de cuartos de la Champions, Gavi dejó claro que las críticas externas no afectan su confianza ni su forma de entender el juego.",
+    conf1P1: "Intento mejorar cada día. Sé lo que puedo hacer y el cuerpo técnico también lo sabe. Quien piense que no entiendo el juego es que no me ha visto bien.",
+    conf1P2: "El centrocampista destacó también la importancia del esfuerzo colectivo: el reconocimiento individual importa poco sin el éxito del equipo.",
+    conf1P3: "En el fútbol nada está garantizado. Hay que trabajar, mantenerse humilde y demostrarlo en cada partido.",
+    conf1Source: "Fuente: FC Barcelona / rueda de prensa UEFA Champions League",
+
+    conf2Kicker: "Tras la victoria del Barça ante el Athletic",
+    conf2Title: "La lesión fue muy dura — pero nunca dejé de creer",
+    conf2Context: "La Liga · Rueda de prensa post-partido",
+    conf2QuoteAccent: "La lesión fue muy dura.",
+    conf2QuoteMain: "Pero nunca dejé de creer que volvería.",
+    conf2Meta: "— Gavi, post-partido",
+    conf2Intro: "Tras su vuelta de una lesión de larga duración, Gavi habló con emoción de su recuperación y del apoyo del equipo y la afición.",
+    conf2P1: "Lo que más me dolió fue ver a mis compañeros y no poder jugar. Pero ahora solo quiero seguir ayudando al equipo y disfrutar cada minuto en el campo.",
+    conf2P2: "Voy cumpliendo los plazos que me marcaron y por ahora todo va muy bien. La afición y mi familia han sido increíbles.",
+    conf2Source: "Fuente: rueda de prensa oficial FC Barcelona",
+
+    conf3Kicker: "Previa a cuartos de la Champions",
+    conf3Title: "Hacemos una gran temporada pero no somos imbatibles",
+    conf3Quote: "Estamos haciendo una gran temporada pero no nos sentimos imbatibles. En el fútbol no siempre se puede ganar. Cada día intento mejorar.",
+    conf3Meta: "— Gavi, FC Barcelona",
+    conf3Source: "Fuente: fcbarcelona.com"
   }
 };
 
@@ -180,29 +256,26 @@ function setLanguage(lang) {
   });
 
   localStorage.setItem("language", lang);
-}
 
-/* ============================
-   NEWS PAGINATION + TRANSLATION
-   ============================ */
+  if (document.getElementById("bumperTrack")) {
+    requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
+  }
+}
 
 let allNews = [];
 let newsTranslations = {};
 let currentPage = 1;
-let currentFilter = "All"; // canonical category (EN)
+let currentFilter = "All";
 const newsPerPage = 9;
 
 function initNews() {
-  // Only run on pages that actually have news grid
   const grid = document.querySelector(".news-grid");
   if (!grid) return;
 
-  // Fetch base English news
   fetch("data/news.json")
     .then(res => res.json())
     .then(data => {
       allNews = data || [];
-      // Then fetch translations (optional)
       return fetch("data/news_translations.json");
     })
     .then(res => res.json())
@@ -214,7 +287,6 @@ function initNews() {
     })
     .catch(err => {
       console.error("Error loading news or translations:", err);
-      // Even if translations fail, at least show English
       prepareFilterButtons();
       renderNews();
       setupFilterButtons();
@@ -222,7 +294,6 @@ function initNews() {
 }
 
 function prepareFilterButtons() {
-  // Save canonical filter in data-filter (so translation of button text won't break filtering)
   document.querySelectorAll(".news-filter-btn").forEach(btn => {
     if (!btn.dataset.filter) {
       btn.dataset.filter = btn.textContent.trim();
@@ -335,7 +406,6 @@ function updatePagination(totalPages) {
     return btn;
   }
 
-  // Prev
   if (currentPage > 1) {
     container.appendChild(createBtn("← Prev", currentPage - 1));
   }
@@ -358,7 +428,6 @@ function updatePagination(totalPages) {
   if (end < totalPages - 1) container.appendChild(createEllipsis());
   if (end < totalPages) container.appendChild(createBtn(totalPages, totalPages));
 
-  // Next
   if (currentPage < totalPages) {
     container.appendChild(createBtn("Next →", currentPage + 1));
   }
@@ -387,10 +456,6 @@ function setupFilterButtons() {
   });
 }
 
-/* ============================
-   PARALLAX HERO (INDEX)
-   ============================ */
-
 window.addEventListener("scroll", () => {
   const heroImg = document.querySelector(".hero-image");
   if (heroImg) {
@@ -398,10 +463,6 @@ window.addEventListener("scroll", () => {
     heroImg.style.transform = `translateY(${scrollY * 0.2}px)`;
   }
 });
-
-/* ============================
-   COUNTDOWN TIMER (INDEX)
-   ============================ */
 
 function updateCountdown() {
   const targetDateString = "2026-02-01T20:00:00";
@@ -414,7 +475,7 @@ function updateCountdown() {
   const matchDetailsButton = document.querySelector(".next-match-inner .hero-btn");
 
   if (!timerElement || !matchDetailsButton) {
-    return; // Exit if elements are missing
+    return; 
   }
 
   if (diff <= 0) {
@@ -448,17 +509,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Initial language
   setLanguage(getCurrentLanguage());
 
-  // Flag buttons (if present)
   const spanishFlag = document.querySelector('.flags img[alt="Spanish"]');
   const englishFlag = document.querySelector('.flags img[alt="English"]');
 
   if (spanishFlag) {
     spanishFlag.addEventListener("click", () => {
       setLanguage("es");
-      // Re-render news cards in ES if we're on the news page
       if (allNews.length && document.querySelector(".news-grid")) {
         renderNews();
       }
@@ -474,7 +532,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Init news (only runs on pages with .news-grid)
   initNews();
 });
 
@@ -482,7 +539,6 @@ function renderLatestNewsFullscreen() {
     const container = document.getElementById("latest-slider");
     if (!container) return;
 
-    // Take 4 most recent news
     const latest = allNews.slice(0, 4).map(getDisplayArticleData);
 
     container.innerHTML = latest.map((a, i) => `
@@ -497,7 +553,6 @@ function renderLatestNewsFullscreen() {
         </div>
     `).join("");
 
-    // Auto slider
     let index = 0;
     const slides = document.querySelectorAll(".latest-slide");
 
@@ -520,7 +575,6 @@ function generateDust(){
     }
 }
 
-/* ⭐ SHOOTING STAR GENERATOR */
 function generateShootingStars(){
     const container = document.getElementById("shooting-container");
     setInterval(() => {
@@ -534,7 +588,6 @@ function generateShootingStars(){
     }, 2800);
 }
 
-/* ✨ MOUSE PARALLAX */
 document.addEventListener("mousemove", e => {
     const layer = document.getElementById("parallax-layer");
     const x = (window.innerWidth / 2 - e.clientX) * 0.02;
@@ -542,7 +595,6 @@ document.addEventListener("mousemove", e => {
     layer.style.transform = `translate(${x}px, ${y}px)`;
 });
 
-/* INIT cosmic effects */
 document.addEventListener("DOMContentLoaded", () => {
     generateDust();
     generateShootingStars();
@@ -552,7 +604,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".latest-slide");
     let i = 0;
 
-    // show first slide
     slides.forEach(s => s.classList.remove("active"));
     slides[0].classList.add("active");
 
@@ -572,7 +623,6 @@ function activateRotator(containerSelector, interval = 3000) {
 
         let index = 0;
 
-        // Reset
         imgs.forEach(img => img.classList.remove("active"));
         imgs[0].classList.add("active");
 
