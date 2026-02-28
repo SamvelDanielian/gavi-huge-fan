@@ -3848,6 +3848,16 @@ body.article-page {
 .awards-header {
   text-align: center;
   margin-bottom: 56px;
+  position: relative;
+  overflow: hidden;
+}
+
+.awards-header-bg {
+  position: absolute;
+  inset: -20%;
+  z-index: -1;
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(0, 51, 160, 0.2) 0%, rgba(165, 0, 68, 0.1) 40%, transparent 70%);
+  pointer-events: none;
 }
 
 .awards-kicker {
@@ -3865,10 +3875,31 @@ body.article-page {
   font-weight: 400;
   letter-spacing: 0.02em;
   margin-bottom: 14px;
-  background: linear-gradient(90deg, #00a2ff, #ff50ad);
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.awards-title--animated {
+  background: linear-gradient(110deg, #00a2ff 0%, #5c6cff 35%, #ff50ad 70%, #00d4aa 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: pressTitleGradient 6s ease-in-out infinite;
+}
+
+.awards-title--animated::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 3px;
+  background: linear-gradient(90deg, #00a2ff, #ff50ad);
+  border-radius: 2px;
+  opacity: 0.6;
+  animation: pressTitleShine 2.5s ease-in-out infinite;
 }
 
 .awards-subtitle {
@@ -3893,22 +3924,79 @@ body.article-page {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 18px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.35s ease, border-color 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, border-color 0.3s ease;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
+.award-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, #00a2ff, #5c6cff, #ff50ad, #00d4aa, #00a2ff);
+  background-size: 300% 300%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  animation: awardBorderFlow 4s linear infinite paused;
+}
+
+.award-card:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+@keyframes awardBorderFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
 .award-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(0, 162, 255, 0.25);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35),
-              0 0 30px rgba(0, 51, 160, 0.15),
-              0 0 20px rgba(255, 80, 173, 0.08);
+  transform: translateY(-8px) scale(1.02);
+  border-color: transparent;
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.4),
+              0 0 40px rgba(0, 162, 255, 0.25),
+              0 0 40px rgba(255, 80, 173, 0.2),
+              0 0 60px rgba(0, 212, 170, 0.15);
+}
+
+.award-card:hover .award-icon {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 12px rgba(0, 162, 255, 0.6));
+}
+
+.award-card:hover .award-name {
+  background: linear-gradient(110deg, #00a2ff, #ff50ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(0, 162, 255, 0.3));
+}
+
+.award-card:hover .award-year {
+  color: #00d4aa;
+  text-shadow: 0 0 12px rgba(0, 212, 170, 0.5);
+}
+
+.award-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .award-icon {
   font-size: 2.2rem;
   margin-bottom: 12px;
   line-height: 1;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.4s ease;
+}
+
+.award-icon--trophy {
+  display: inline-block;
 }
 
 .award-year {
@@ -3918,6 +4006,7 @@ body.article-page {
   letter-spacing: 0.15em;
   color: rgba(0, 162, 255, 0.9);
   margin-bottom: 8px;
+  transition: color 0.4s ease, text-shadow 0.4s ease;
 }
 
 .award-name {
@@ -3926,6 +4015,7 @@ body.article-page {
   font-weight: 700;
   color: #fff;
   margin: 0 0 6px 0;
+  transition: filter 0.4s ease;
 }
 
 .award-desc {
@@ -3974,6 +4064,16 @@ body.article-page {
 .quotes-header {
   text-align: center;
   margin-bottom: 56px;
+  position: relative;
+  overflow: hidden;
+}
+
+.quotes-header-bg {
+  position: absolute;
+  inset: -20%;
+  z-index: -1;
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(165, 0, 68, 0.15) 0%, rgba(0, 51, 160, 0.15) 40%, transparent 70%);
+  pointer-events: none;
 }
 
 .quotes-kicker {
@@ -3991,10 +4091,31 @@ body.article-page {
   font-weight: 400;
   letter-spacing: 0.02em;
   margin-bottom: 14px;
-  background: linear-gradient(90deg, #ff50ad, #00a2ff);
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.quotes-title--animated {
+  background: linear-gradient(110deg, #ff50ad 0%, #5c6cff 35%, #00a2ff 70%, #00d4aa 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: pressTitleGradient 6s ease-in-out infinite;
+}
+
+.quotes-title--animated::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff50ad, #00a2ff);
+  border-radius: 2px;
+  opacity: 0.6;
+  animation: pressTitleShine 2.5s ease-in-out infinite;
 }
 
 .quotes-subtitle {
@@ -4019,7 +4140,7 @@ body.article-page {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.35s ease;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
   position: relative;
   padding-left: 36px;
 }
@@ -4034,6 +4155,62 @@ body.article-page {
   border-radius: 4px 0 0 4px;
   background: linear-gradient(180deg, #00a2ff, #ff50ad);
   box-shadow: 0 0 12px rgba(0, 162, 255, 0.4);
+  z-index: 1;
+  transition: box-shadow 0.4s ease, width 0.3s ease;
+}
+
+.quote-card::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 22px;
+  padding: 2px;
+  background: linear-gradient(135deg, #00a2ff, #5c6cff, #ff50ad, #00d4aa, #00a2ff);
+  background-size: 300% 300%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  animation: awardBorderFlow 4s linear infinite paused;
+}
+
+.quote-card:hover::after {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.quote-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.35),
+              0 0 40px rgba(0, 162, 255, 0.2),
+              0 0 40px rgba(255, 80, 173, 0.2),
+              0 0 60px rgba(0, 212, 170, 0.12);
+}
+
+.quote-card:hover::before {
+  box-shadow: 0 0 20px rgba(0, 162, 255, 0.7), 0 0 16px rgba(255, 80, 173, 0.5);
+}
+
+.quote-card .quote-text,
+.quote-card .quote-attribution {
+  position: relative;
+  z-index: 1;
+}
+
+.quote-card:hover .quote-text {
+  color: #fff;
+  text-shadow: 0 0 24px rgba(255, 255, 255, 0.15);
+}
+
+.quote-card:hover .quote-name {
+  background: linear-gradient(110deg, #00a2ff, #ff50ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 16px rgba(0, 162, 255, 0.4));
 }
 
 .quote-card:hover {
@@ -4063,6 +4240,8 @@ body.article-page {
   font-weight: 700;
   color: #fff;
   font-style: normal;
+  display: inline-block;
+  transition: filter 0.4s ease;
 }
 
 .quote-role {
