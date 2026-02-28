@@ -4149,11 +4149,11 @@ body.article-page {
 
 .quotes-bg-ball {
   position: absolute;
-  width: clamp(180px, 35vw, 380px);
+  width: clamp(200px, 38vw, 420px);
   height: auto;
-  right: 5%;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   opacity: 0.14;
   object-fit: contain;
   filter: drop-shadow(0 28px 56px rgba(0, 0, 0, 0.55))
@@ -4164,24 +4164,20 @@ body.article-page {
 
 @keyframes quotesBgBallFloat {
   0%, 100% {
-    transform: translateY(-50%) translateX(0) rotate(0deg);
+    transform: translate(-50%, -50%) translateX(-35vw) rotate(0deg);
     opacity: 0.12;
-    right: 5%;
   }
   25% {
-    transform: translateY(-55%) translateX(-8%) rotate(15deg);
+    transform: translate(-50%, -50%) translateX(0) translateY(-5vh) rotate(15deg);
     opacity: 0.16;
-    right: 15%;
   }
   50% {
-    transform: translateY(-45%) translateX(-5%) rotate(-10deg);
+    transform: translate(-50%, -50%) translateX(30vw) translateY(3vh) rotate(-10deg);
     opacity: 0.14;
-    right: 8%;
   }
   75% {
-    transform: translateY(-52%) translateX(-12%) rotate(8deg);
+    transform: translate(-50%, -50%) translateX(-15vw) translateY(4vh) rotate(8deg);
     opacity: 0.15;
-    right: 12%;
   }
 }
 
@@ -4352,6 +4348,29 @@ body.article-page {
 }
 
 .quote-attribution {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+.quote-avatar {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.quote-avatar--crest {
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 4px;
+}
+
+.quote-attribution-text {
   display: flex;
   flex-direction: column;
   gap: 2px;
