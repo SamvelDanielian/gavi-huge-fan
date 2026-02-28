@@ -3861,6 +3861,33 @@ body.article-page {
   text-shadow: 0 0 80px rgba(0, 162, 255, 0.15);
 }
 
+.awards-bg-medal {
+  position: absolute;
+  width: clamp(140px, 28vw, 320px);
+  height: auto;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.12;
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.5))
+          drop-shadow(0 12px 24px rgba(0, 0, 0, 0.4))
+          drop-shadow(0 0 40px rgba(180, 140, 60, 0.15));
+  animation: awardsBgMedalFloat 20s ease-in-out infinite;
+}
+
+@keyframes awardsBgMedalFloat {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(-52%) translateX(-5%);
+    opacity: 0.14;
+  }
+}
+
 @keyframes awardsBgTitleSlide {
   0% {
     left: -15%;
@@ -4111,30 +4138,33 @@ body.article-page {
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
-  opacity: 0.06;
-  filter: drop-shadow(0 0 60px rgba(0, 162, 255, 0.2));
+  opacity: 0.14;
+  object-fit: contain;
+  filter: drop-shadow(0 28px 56px rgba(0, 0, 0, 0.55))
+          drop-shadow(0 14px 28px rgba(0, 0, 0, 0.4))
+          drop-shadow(0 0 50px rgba(0, 162, 255, 0.12));
   animation: quotesBgBallFloat 18s ease-in-out infinite;
 }
 
 @keyframes quotesBgBallFloat {
   0%, 100% {
     transform: translateY(-50%) translateX(0) rotate(0deg);
-    opacity: 0.05;
+    opacity: 0.12;
     right: 5%;
   }
   25% {
-    transform: translateY(-55%) translateX(-8%) rotate(90deg);
-    opacity: 0.08;
+    transform: translateY(-55%) translateX(-8%) rotate(15deg);
+    opacity: 0.16;
     right: 15%;
   }
   50% {
-    transform: translateY(-45%) translateX(-5%) rotate(180deg);
-    opacity: 0.06;
+    transform: translateY(-45%) translateX(-5%) rotate(-10deg);
+    opacity: 0.14;
     right: 8%;
   }
   75% {
-    transform: translateY(-52%) translateX(-12%) rotate(270deg);
-    opacity: 0.07;
+    transform: translateY(-52%) translateX(-12%) rotate(8deg);
+    opacity: 0.15;
     right: 12%;
   }
 }
