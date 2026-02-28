@@ -4261,6 +4261,9 @@ body.article-page {
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
   position: relative;
   padding-left: 36px;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
 }
 
 .quote-card::before {
@@ -4345,13 +4348,17 @@ body.article-page {
   color: rgba(255, 255, 255, 0.92);
   margin: 0 0 20px 0;
   font-style: italic;
+  flex: 1 1 auto;
 }
 
 .quote-attribution {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 14px;
+  margin-top: auto;
+  padding-top: 8px;
 }
 
 .quote-avatar {
@@ -4374,6 +4381,7 @@ body.article-page {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  text-align: center;
 }
 
 .quote-name {
