@@ -3867,24 +3867,22 @@ body.article-page {
   height: auto;
   right: 8%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(0);
   opacity: 0.12;
   object-fit: contain;
   object-position: center;
   filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.5))
           drop-shadow(0 12px 24px rgba(0, 0, 0, 0.4))
           drop-shadow(0 0 40px rgba(180, 140, 60, 0.15));
-  animation: awardsBgMedalFloat 20s ease-in-out infinite;
+  animation: awardsBgMedalSlide 28s linear infinite;
 }
 
-@keyframes awardsBgMedalFloat {
-  0%, 100% {
+@keyframes awardsBgMedalSlide {
+  0% {
     transform: translateY(-50%) translateX(0);
-    opacity: 0.1;
   }
-  50% {
-    transform: translateY(-52%) translateX(-5%);
-    opacity: 0.14;
+  100% {
+    transform: translateY(-50%) translateX(-140vw);
   }
 }
 
