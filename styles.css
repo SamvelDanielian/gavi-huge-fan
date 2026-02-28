@@ -3832,10 +3832,62 @@ body.article-page {
 .awards-section {
   position: relative;
   padding: 100px 8% 120px;
-  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(10, 25, 50, 0.6) 0%, transparent 55%),
-              linear-gradient(180deg, #060810 0%, #0a0e18 50%, #05070c 100%);
+  background: linear-gradient(180deg, #060810 0%, #0a0e18 45%, #080b14 100%);
   color: #fff;
   overflow: hidden;
+}
+
+.awards-bg-deco {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.awards-bg-title {
+  position: absolute;
+  left: -15%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(8rem, 22vw, 20rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.04);
+  white-space: nowrap;
+  text-transform: uppercase;
+  animation: awardsBgTitleSlide 25s ease-in-out infinite;
+  text-shadow: 0 0 80px rgba(0, 162, 255, 0.15);
+}
+
+@keyframes awardsBgTitleSlide {
+  0% {
+    left: -15%;
+    transform: translateY(-50%);
+    opacity: 0.03;
+    text-shadow: 0 0 60px rgba(0, 162, 255, 0.08);
+  }
+  15% {
+    opacity: 0.06;
+    text-shadow: 0 0 100px rgba(0, 162, 255, 0.2);
+  }
+  50% {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.05;
+    text-shadow: 0 0 120px rgba(255, 80, 173, 0.15);
+  }
+  85% {
+    opacity: 0.06;
+    text-shadow: 0 0 100px rgba(0, 162, 255, 0.2);
+  }
+  100% {
+    left: 115%;
+    transform: translateY(-50%);
+    opacity: 0.03;
+    text-shadow: 0 0 60px rgba(0, 162, 255, 0.08);
+  }
 }
 
 .awards-inner {
@@ -3849,15 +3901,6 @@ body.article-page {
   text-align: center;
   margin-bottom: 56px;
   position: relative;
-  overflow: hidden;
-}
-
-.awards-header-bg {
-  position: absolute;
-  inset: -20%;
-  z-index: -1;
-  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(0, 51, 160, 0.2) 0%, rgba(165, 0, 68, 0.1) 40%, transparent 70%);
-  pointer-events: none;
 }
 
 .awards-kicker {
@@ -4048,10 +4091,52 @@ body.article-page {
 .quotes-section {
   position: relative;
   padding: 100px 8% 120px;
-  background: radial-gradient(ellipse 70% 50% at 50% 100%, rgba(80, 20, 60, 0.15) 0%, transparent 50%),
-              linear-gradient(0deg, #060810 0%, #0a0e18 30%, #070a12 100%);
+  background: linear-gradient(0deg, #060810 0%, #0a0e18 35%, #070a12 100%);
   color: #fff;
   overflow: hidden;
+}
+
+.quotes-bg-deco {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.quotes-bg-ball {
+  position: absolute;
+  width: clamp(180px, 35vw, 380px);
+  height: auto;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.06;
+  filter: drop-shadow(0 0 60px rgba(0, 162, 255, 0.2));
+  animation: quotesBgBallFloat 18s ease-in-out infinite;
+}
+
+@keyframes quotesBgBallFloat {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0) rotate(0deg);
+    opacity: 0.05;
+    right: 5%;
+  }
+  25% {
+    transform: translateY(-55%) translateX(-8%) rotate(90deg);
+    opacity: 0.08;
+    right: 15%;
+  }
+  50% {
+    transform: translateY(-45%) translateX(-5%) rotate(180deg);
+    opacity: 0.06;
+    right: 8%;
+  }
+  75% {
+    transform: translateY(-52%) translateX(-12%) rotate(270deg);
+    opacity: 0.07;
+    right: 12%;
+  }
 }
 
 .quotes-inner {
@@ -4065,15 +4150,6 @@ body.article-page {
   text-align: center;
   margin-bottom: 56px;
   position: relative;
-  overflow: hidden;
-}
-
-.quotes-header-bg {
-  position: absolute;
-  inset: -20%;
-  z-index: -1;
-  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(165, 0, 68, 0.15) 0%, rgba(0, 51, 160, 0.15) 40%, transparent 70%);
-  pointer-events: none;
 }
 
 .quotes-kicker {
