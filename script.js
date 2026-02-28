@@ -172,7 +172,43 @@ const translations = {
     familyQuote3: "Gavi publicly shows his girlfriend.",
     familyPillAnita: "Anita Pelayo",
     familyPillAna: "Ana",
-    familyPillBestCouple: "Best Couple"
+    familyPillBestCouple: "Best Couple",
+
+    bioYear1: "2004",
+    bioHeading1: "Los Palacios y Villafranca",
+    bioText1: "Pablo Martín Páez Gavira was born on August 5, 2004, in Los Palacios y Villafranca, a small Andalusian town known for producing football talent. He grew up in a humble, hard-working family: his father Pablo worked long shifts, while his mother Gavira became the emotional pillar of the home.",
+    bioChip1: "Los Palacios · 2004",
+    bioYear2: "2004–2013",
+    bioHeading2: "Tiny kid, huge intensity",
+    bioText2: "From the age of 4, Gavi played football everywhere — streets, schoolyards, dirt patches behind buildings. Neighbors remember him dribbling through obstacles he built from stones and bottles, repeating plays again and again if a pass wasn't perfect.<br><br>Coaches at his first club, La Liara Balompié, described him simply as: <span class=\"bio-quote\">\"Tiny kid, huge intensity.\"</span>",
+    bioChip2: "La Liara Balompie · 2012",
+    bioYear3: "2013–2015",
+    bioHeading3: "Andalusia's hidden gem",
+    bioText3: "As his technical level exploded, Sevilla FC scouts noticed him and signed him to their academy. Andalusia was far from the spotlight: hard pitches, dusty boots, and long drives from his parents every single week so he could chase his dream.<br><br>One coach remembers: <span class=\"bio-quote\">\"Other kids wanted to score goals. Gavi only wanted the ball. Every ball.\"</span>",
+    bioChip3: "Won with Betis · 2014",
+    bioYear4: "2015",
+    bioHeading4: "La Masia: leaving home at 11",
+    bioText4: "At 11, FC Barcelona signed Gavi. The decision changed everything: the family moved hundreds of kilometres, leaving behind friends and familiar streets.<br><br>At La Masia he:<br>• lived in the dormitory with other kids<br>• studied in the mornings<br>• trained every afternoon<br>• watched hours of football at night<br><br>Coaches immediately saw elite competitiveness, fearless duels, rare vision, and unusual maturity.",
+    bioChip4: "New Home · 2015",
+    bioYear5: "2016–2020",
+    bioHeading5: "Lightning through the academy",
+    bioText5: "Gavi tore through the youth teams:<br>• U15 standout<br>• U16 captain material<br>• promoted early to U19<br>• then to Barça B<br><br>Analysts compared him to Iniesta's bravery, prime Xavi's intensity and Gattuso's duels — but insisted: <span class=\"bio-quote\">\"Gavi is not the next anyone. He is something new.\"</span>",
+    bioChip5: "La Masia · 2017",
+    bioYear6: "2021",
+    bioHeading6: "Seventeen and fearless",
+    bioText6: "At 17, Ronald Koeman called him up for preseason. Players twice his size bounced off him. He demanded the ball from Busquets and dribbled past world-class defenders like it was nothing.<br><br>By autumn he was:<br>• one of Barça's youngest debutants<br>• a regular starter<br>• already a fan favourite for his courage and fight<br><br>Xavi would say later: <span class=\"bio-quote\">\"Gavi has a heart the size of a planet.\"</span>",
+    bioChip6: "Debut · 2021",
+    bioYear7: "2022",
+    bioHeading7: "Golden Boy & world stage",
+    bioText7: "2022 was the year the world understood how special he was. Gavi became Golden Boy and Kopa Trophy winner, a leader in Spain's midfield at 18, and one of the youngest ever World Cup goalscorers.<br><br>His goal vs Costa Rica, replayed millions of times, showed not just skill, but maturity, power and identity.",
+    bioChip7: "Kopa Trophy · 2022",
+    bioYear8: "2023 →",
+    bioHeading8: "Future of Barcelona football",
+    bioText8: "Spain trusted Gavi with responsibilities usually given to veterans. He pressed like a monster, won duels and played with fire, especially in El Clásico, where his passion turned him into a cult hero.<br><br>Many analysts say: <span class=\"bio-quote\">\"No one represents the future of Spanish football more than Gavi.\"</span>",
+    bioChip8: "With Lamine · 2025",
+    familyText1: "On the left is Pablo's father, Pablo Páez. Next to him is Aurora Belén Gavira, Pablo and Aurora's mother. Aurora Páez Gavira is Pablo's sister. Gavi comes from a close-knit, working-class family that played an instrumental role in nurturing his talent. When Barcelona's offer came, the decision to allow their young son to move to La Masia represented a profound act of faith and sacrifice. This family foundation has remained crucial to Gavi's development.",
+    familyText2: "Aurora Paez Gavira, Pablo's sister who was born on February 27, 2003 and raised in the Seville region of Spain before moving to Barcelona. She studied primary education in the Marismas region of Spain. Aurora graduated from university in 2025.<br>Aurora and Gavi <em>in my edit.</em>",
+    familyText3: "Anita Pelayo or Ana Pelayo, Pablo's girlfriend who was born on October 24, 2002 in Seville, Spain. She is a young and rising social media influencer and student from Seville, Spain. Currently she is a student of University of Seville. Ana reportedly met through Pablo's sister and has been in a relationship with Pablo since 2022.<br>Here in video Pablo introduces Ana to Ansu Fati <em>and then Pablo's father comes to wave Ansu.</em>"
   },
 
   es: {
@@ -327,7 +363,43 @@ const translations = {
     familyQuote3: "Gavi presenta en público a su novia.",
     familyPillAnita: "Anita Pelayo",
     familyPillAna: "Ana",
-    familyPillBestCouple: "Mejor pareja"
+    familyPillBestCouple: "Mejor pareja",
+
+    bioYear1: "2004",
+    bioHeading1: "Los Palacios y Villafranca",
+    bioText1: "Pablo Martín Páez Gavira nació el 5 de agosto de 2004 en Los Palacios y Villafranca, un pequeño pueblo andaluz conocido por formar talento del fútbol. Creció en una familia humilde y trabajadora: su padre Pablo trabajaba largas jornadas y su madre Gavira era el pilar emocional del hogar.",
+    bioChip1: "Los Palacios · 2004",
+    bioYear2: "2004–2013",
+    bioHeading2: "Niño pequeño, intensidad enorme",
+    bioText2: "Desde los 4 años, Gavi jugó al fútbol en todas partes: calles, patios de colegio, descampados. Los vecinos lo recuerdan esquivando obstáculos que montaba con piedras y botellas, repitiendo jugadas una y otra vez si un pase no era perfecto.<br><br>Los entrenadores de su primer club, La Liara Balompié, lo describían así: <span class=\"bio-quote\">\"Niño pequeño, intensidad enorme.\"</span>",
+    bioChip2: "La Liara Balompié · 2012",
+    bioYear3: "2013–2015",
+    bioHeading3: "La joya escondida de Andalucía",
+    bioText3: "Cuando su nivel técnico explotó, los ojeadores del Sevilla FC lo ficharon para su cantera. Andalucía quedaba lejos del foco: campos duros, botas polvorientas y viajes largos de sus padres cada semana para perseguir su sueño.<br><br>Un entrenador recuerda: <span class=\"bio-quote\">\"Los demás querían marcar. Gavi solo quería el balón. Siempre el balón.\"</span>",
+    bioChip3: "Ganó con Betis · 2014",
+    bioYear4: "2015",
+    bioHeading4: "La Masia: dejar casa a los 11",
+    bioText4: "Con 11 años, el FC Barcelona fichó a Gavi. La decisión lo cambió todo: la familia se mudó cientos de kilómetros, dejando atrás amigos y calles conocidas.<br><br>En La Masia:<br>• vivió en la residencia con otros niños<br>• estudió por las mañanas<br>• entrenó cada tarde<br>• vio horas de fútbol por la noche<br><br>Los entrenadores vieron al instante competitividad de élite, duelos sin miedo, visión y madurez poco habituales.",
+    bioChip4: "Nuevo hogar · 2015",
+    bioYear5: "2016–2020",
+    bioHeading5: "Un rayo por la cantera",
+    bioText5: "Gavi arrasó en los equipos de formación:<br>• destacado en juvenil<br>• material de capitán<br>• subido pronto al Juvenil A<br>• y después al Barça B<br><br>Lo compararon con la valentía de Iniesta, la intensidad de Xavi y los duelos de Gattuso, pero insistían: <span class=\"bio-quote\">\"Gavi no es el siguiente de nadie. Es algo nuevo.\"</span>",
+    bioChip5: "La Masia · 2017",
+    bioYear6: "2021",
+    bioHeading6: "Diecisiete años y sin miedo",
+    bioText6: "Con 17 años, Ronald Koeman lo convocó para la pretemporada. Jugadores el doble de grandes rebotaban en él. Pedía el balón a Busquets y dejaba atrás defensas de primer nivel como si nada.<br><br>En otoño ya era:<br>• uno de los debutantes más jóvenes del Barça<br>• titular habitual<br>• favorito de la afición por su coraje y lucha<br><br>Xavi diría después: <span class=\"bio-quote\">\"Gavi tiene un corazón del tamaño de un planeta.\"</span>",
+    bioChip6: "Debut · 2021",
+    bioYear7: "2022",
+    bioHeading7: "Golden Boy y escenario mundial",
+    bioText7: "2022 fue el año en que el mundo entendió lo especial que es. Gavi ganó el Golden Boy y el Trofeo Kopa, se erigió en líder del mediocampo de España con 18 años y fue uno de los goleadores más jóvenes en un Mundial.<br><br>Su gol ante Costa Rica, repetido millones de veces, mostró no solo técnica, sino madurez, potencia e identidad.",
+    bioChip7: "Trofeo Kopa · 2022",
+    bioYear8: "2023 →",
+    bioHeading8: "El futuro del fútbol del Barça",
+    bioText8: "España confió a Gavi responsabilidades propias de veteranos. Presionó como un monstruo, ganó duelos y jugó con fuego, sobre todo en el Clásico, donde su pasión lo convirtió en un ídolo.<br><br>Muchos analistas dicen: <span class=\"bio-quote\">\"Nadie representa mejor el futuro del fútbol español que Gavi.\"</span>",
+    bioChip8: "Con Lamine · 2025",
+    familyText1: "A la izquierda está el padre de Pablo, Pablo Páez. Junto a él, Aurora Belén Gavira, la madre de Pablo y Aurora. Aurora Páez Gavira es la hermana de Pablo. Gavi viene de una familia unida y trabajadora que fue clave para su talento. Cuando llegó la oferta del Barcelona, decidir que su hijo se mudara a La Masia fue un acto de fe y sacrificio. Esa base familiar sigue siendo fundamental para Gavi.",
+    familyText2: "Aurora Páez Gavira, la hermana de Pablo, nació el 27 de febrero de 2003 y se crió en Sevilla antes de mudarse a Barcelona. Estudió magisterio en la zona de las Marismas. Se licenció en 2025.<br>Aurora y Gavi <em>en mi edit.</em>",
+    familyText3: "Anita Pelayo o Ana Pelayo, la novia de Pablo, nació el 24 de octubre de 2002 en Sevilla. Es influencer y estudiante. Estudia en la Universidad de Sevilla. Conoció a Pablo a través de su hermana y llevan juntos desde 2022.<br>En el vídeo Pablo presenta a Ana a Ansu Fati <em>y luego su padre saluda a Ansu.</em>"
   }
 };
 
@@ -342,6 +414,12 @@ function setLanguage(lang) {
     const key = el.getAttribute("data-i18n");
     if (key && dict[key]) {
       el.textContent = dict[key];
+    }
+  });
+  document.querySelectorAll("[data-i18n-html]").forEach(el => {
+    const key = el.getAttribute("data-i18n-html");
+    if (key && dict[key]) {
+      el.innerHTML = dict[key];
     }
   });
 

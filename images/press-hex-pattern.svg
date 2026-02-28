@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="70" viewBox="0 0 80 70">
+  <defs>
+    <pattern id="pressHex" x="0" y="0" width="80" height="70" patternUnits="userSpaceOnUse">
+      <!-- Flat-top hex grid: row 0 -->
+      <path d="M20 0 L40 8.66 L40 25.98 L20 34.64 L0 25.98 L0 8.66 Z" fill="none" stroke="rgba(35,65,105,0.5)" stroke-width="0.9"/>
+      <path d="M60 0 L80 8.66 L80 25.98 L60 34.64 L40 25.98 L40 8.66 Z" fill="none" stroke="rgba(35,65,105,0.5)" stroke-width="0.9"/>
+      <!-- Row 1 (offset by half width) -->
+      <path d="M10 34.64 L30 43.3 L30 60.62 L10 69.28 L-10 60.62 L-10 43.3 Z" fill="none" stroke="rgba(55,85,130,0.3)" stroke-width="0.6"/>
+      <path d="M50 34.64 L70 43.3 L70 60.62 L50 69.28 L30 60.62 L30 43.3 Z" fill="none" stroke="rgba(55,85,130,0.3)" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="80" height="70" fill="#0a1420"/>
+  <rect width="80" height="70" fill="url(#pressHex)"/>
+</svg>
