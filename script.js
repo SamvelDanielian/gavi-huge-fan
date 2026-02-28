@@ -156,7 +156,23 @@ const translations = {
     family02Tag: "02 — SISTER",
     family02Heading: "Pablo's sister",
     family03Tag: "03 — GIRLFRIEND",
-    family03Heading: "Anita Pelayo"
+    family03Heading: "Anita Pelayo",
+    bioTimelineLabel: "GAVI'S PATH",
+    familyCaption1: "Barcelona · August 5 2024",
+    familyQuote1: "Pablo's family celebrates Pablo's birthday",
+    familyPillParents: "Parents",
+    familyPillDadMom: "Dad & Mom",
+    familyPillSister: "Sister",
+    familyCaption2: "Aurora & Pablo · edit by GHF",
+    familyQuote2: "Find this edit on our instagram",
+    familyPillAurora: "Aurora Paez",
+    familyPillGavira: "Gavira",
+    familyPillBestSister: "Best Sister in the world",
+    familyCaption3: "La Liga Celebration · 2025",
+    familyQuote3: "Gavi publicly shows his girlfriend.",
+    familyPillAnita: "Anita Pelayo",
+    familyPillAna: "Ana",
+    familyPillBestCouple: "Best Couple"
   },
 
   es: {
@@ -295,7 +311,23 @@ const translations = {
     family02Tag: "02 — HERMANA",
     family02Heading: "La hermana de Pablo",
     family03Tag: "03 — PAREJA",
-    family03Heading: "Anita Pelayo"
+    family03Heading: "Anita Pelayo",
+    bioTimelineLabel: "EL CAMINO DE GAVI",
+    familyCaption1: "Barcelona · 5 de agosto 2024",
+    familyQuote1: "La familia de Pablo celebra su cumpleaños",
+    familyPillParents: "Padres",
+    familyPillDadMom: "Papá y mamá",
+    familyPillSister: "Hermana",
+    familyCaption2: "Aurora y Pablo · edit por GHF",
+    familyQuote2: "Encuentra este edit en nuestro instagram",
+    familyPillAurora: "Aurora Páez",
+    familyPillGavira: "Gavira",
+    familyPillBestSister: "La mejor hermana del mundo",
+    familyCaption3: "Celebración La Liga · 2025",
+    familyQuote3: "Gavi presenta en público a su novia.",
+    familyPillAnita: "Anita Pelayo",
+    familyPillAna: "Ana",
+    familyPillBestCouple: "Mejor pareja"
   }
 };
 

@@ -2366,8 +2366,7 @@ body.article-page {
     box-shadow: 0 0 18px rgba(0, 180, 255, 0.8);
 }
 
-.bio-timeline::after {
-    content: "GAVI'S PATH";
+.bio-timeline-label {
     position: absolute;
     bottom: -65px;
     left: 50%;
@@ -3642,12 +3641,37 @@ body.article-page {
 .press-transcript-wrap {
   padding: 80px 8vw 100px;
   position: relative;
+  overflow: hidden;
+}
+
+.press-hex-layer {
+  position: absolute;
+  inset: 0;
+  background-image: url("images/barcahex.png");
+  background-size: 220px;
+  opacity: 0.12;
+  z-index: 0;
+  pointer-events: none;
+  animation: pressHexMove 22s linear infinite;
+}
+
+.press-hex-layer--2 {
+  background-image: url("images/barcahex2.png");
+  opacity: 0.1;
+  animation-direction: reverse;
+  animation-duration: 18s;
+}
+
+@keyframes pressHexMove {
+  from { background-position: 0 0; }
+  to   { background-position: 600px 400px; }
 }
 
 .press-transcript-wrap::before {
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: radial-gradient(ellipse 100% 80% at 50% 0%, rgba(0, 51, 160, 0.08) 0%, transparent 50%);
   pointer-events: none;
 }
@@ -3656,6 +3680,7 @@ body.article-page {
   max-width: 720px;
   margin: 0 auto;
   position: relative;
+  z-index: 2;
   padding: 48px 44px 52px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
