@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Gavi | Stats & Bio</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -37,8 +38,8 @@
     </video>
 
     <div class="gavi-hero-content">
-        <h1 class="gavi-hero-title">WELCOME TO GAVI'S WORLD</h1>
-        <p class="gavi-hero-subtitle">Everything about Pablo Gavi in one place</p>
+        <h1 class="gavi-hero-title" data-i18n="gaviHeroTitle">WELCOME TO GAVI'S WORLD</h1>
+        <p class="gavi-hero-subtitle" data-i18n="gaviHeroSubtitle">Everything about Pablo Gavi in one place</p>
         <div class="scroll-down"
             onclick="document.getElementById('biography').scrollIntoView({ behavior: 'smooth' });">
         </div>
@@ -50,73 +51,61 @@
   <div class="alltime-inner">
 
     <header class="alltime-header">
-      <p class="alltime-kicker">ALL-TIME STATS</p>
-      <h2 class="alltime-title">Numbers that already feel unreal</h2>
-      <p class="alltime-subtitle">
-        Senior competitive matches · As of December&nbsp;2025
-      </p>
+      <p class="alltime-kicker" data-i18n="alltimeKicker">ALL-TIME STATS</p>
+      <h2 class="alltime-title" data-i18n="alltimeTitle">Numbers that already feel unreal</h2>
+      <p class="alltime-subtitle" data-i18n="alltimeSubtitle">Senior competitive matches · As of December 2025</p>
     </header>
 
     <div class="gavi-stats-rotator">
 
       <article class="alltime-card club-barca gavi-stats-card active">
         <img class="gavi-club-emblem" src="images/barcelonaemblem.jpg" alt="FC Barcelona Logo">
-        <div class="alltime-card-tag">CLUB</div>
-        <h3 class="alltime-card-title">FC&nbsp;Barcelona</h3>
-
+        <div class="alltime-card-tag" data-i18n="alltimeTagClub">CLUB</div>
+        <h3 class="alltime-card-title" data-i18n="alltimeTitleBarca">FC Barcelona</h3>
         <div class="alltime-main-stat">
           <span class="stat-number" data-stat-target="155">0</span>
-          <span class="stat-label-main">Appearances</span>
+          <span class="stat-label-main" data-i18n="statAppearances">Appearances</span>
         </div>
-
         <div class="alltime-substats">
           <div class="substat">
             <span class="substat-number stat-number" data-stat-target="10">0</span>
-            <span class="substat-label">Goals</span>
+            <span class="substat-label" data-i18n="statGoals">Goals</span>
           </div>
           <div class="substat">
             <span class="substat-number stat-number" data-stat-target="18">0</span>
-            <span class="substat-label">Assists</span>
+            <span class="substat-label" data-i18n="statAssists">Assists</span>
           </div>
           <div class="substat">
             <span class="substat-number stat-number" data-stat-target="5">0</span>
-            <span class="substat-label">Trophies</span>
+            <span class="substat-label" data-i18n="statTrophies">Trophies</span>
           </div>
         </div>
-
-        <p class="alltime-note">
-          Data from official source with Barça first team: transfermarkt.com
-        </p>
+        <p class="alltime-note" data-i18n="alltimeNoteBarca">Data from official source with Barça first team: transfermarkt.com</p>
       </article>
 
       <article class="alltime-card club-spain gavi-stats-card">
         <img class="gavi-club-emblem" src="images/spainemblem.jpg" alt="Spain Logo">
-        <div class="alltime-card-tag">COUNTRY</div>
-        <h3 class="alltime-card-title">Spain National Team</h3>
-
+        <div class="alltime-card-tag" data-i18n="alltimeTagCountry">COUNTRY</div>
+        <h3 class="alltime-card-title" data-i18n="alltimeTitleSpain">Spain National Team</h3>
         <div class="alltime-main-stat">
           <span class="stat-number" data-stat-target="28">0</span>
-          <span class="stat-label-main">Caps</span>
+          <span class="stat-label-main" data-i18n="statCaps">Caps</span>
         </div>
-
         <div class="alltime-substats">
           <div class="substat">
             <span class="substat-number stat-number" data-stat-target="5">0</span>
-            <span class="substat-label">Goals</span>
+            <span class="substat-label" data-i18n="statGoals">Goals</span>
           </div>
           <div class="substat">
             <span class="substat-number">1</span>
-            <span class="substat-label">World Cup Goal</span>
+            <span class="substat-label" data-i18n="statWorldCupGoal">World Cup Goal</span>
           </div>
           <div class="substat">
             <span class="substat-number">1</span>
-            <span class="substat-label">Trophies</span>
+            <span class="substat-label" data-i18n="statTrophies">Trophies</span>
           </div>
         </div>
-
-        <p class="alltime-note">
-          Data from official source with Spain national team: transfermarkt.com
-        </p>
+        <p class="alltime-note" data-i18n="alltimeNoteSpain">Data from official source with Spain national team: transfermarkt.com</p>
       </article>
 
     </div>
@@ -152,12 +141,9 @@
   </video>  
   <div class="bio-overlay"></div>
   <div class="bio-inner">
-    <p class="bio-kicker">BIOGRAPHY</p>
-    <h2 class="bio-title">From Los Palacios to the world</h2>
-    <p class="bio-subtitle">
-      The story of how a kid from a small Andalusian town became the fearless heart of
-      Barcelona and Spain.
-    </p>
+    <p class="bio-kicker" data-i18n="bioKicker">BIOGRAPHY</p>
+    <h2 class="bio-title" data-i18n="bioTitle">From Los Palacios to the world</h2>
+    <p class="bio-subtitle" data-i18n="bioSubtitle">The story of how a kid from a small Andalusian town became the fearless heart of Barcelona and Spain.</p>
   </div>
 
   <div class="bio-timeline">
@@ -334,8 +320,8 @@
   <div class="family-beam beam-right"></div>
 
   <header class="family-header fade-in">
-    <p class="family-kicker">FAMILY</p>
-    <h2 class="family-title">The people behind Pablo</h2>
+    <p class="family-kicker" data-i18n="familyKicker">FAMILY</p>
+    <h2 class="family-title" data-i18n="familyTitle">The people behind Pablo</h2>
   </header>
 
   <div class="family-story-block fade-in">
@@ -349,9 +335,9 @@
       </div>
     </div>
     <div class="family-story-text">
-      <div class="family-mini-tag">01 — PARENTS</div>
+      <div class="family-mini-tag" data-i18n="family01Tag">01 — PARENTS</div>
       <h3 class="family-heading">
-        Pablo Paez &amp; Aurora Gavira
+        <span data-i18n="family01Heading">Pablo Paez &amp; Aurora Gavira</span>
         <span class="family-underline"></span>
       </h3>
       <p class="family-text">
@@ -423,9 +409,9 @@
       </div>
     </div>
     <div class="family-story-text">
-      <div class="family-mini-tag">03 — GIRLFRIEND</div>
+      <div class="family-mini-tag" data-i18n="family03Tag">03 — GIRLFRIEND</div>
       <h3 class="family-heading">
-        Anita Pelayo
+        <span data-i18n="family03Heading">Anita Pelayo</span>
         <span class="family-underline"></span>
       </h3>      
       <p class="family-text">
@@ -472,11 +458,12 @@
 
 <section class="press-conf">
   <header class="press-conf-list-header reveal">
-    <h2 class="press-conf-list-title" data-i18n="pressConfListTitle">Press conferences</h2>
+    <div class="press-conf-list-header-bg"></div>
+    <h2 class="press-conf-list-title press-conf-list-title--animated" data-i18n="pressConfListTitle">Press conferences</h2>
     <p class="press-conf-list-subtitle" data-i18n="pressConfListSubtitle">Official statements and post-match interviews</p>
   </header>
 
-  <div class="press-conf-block" id="conf-dortmund">
+  <div class="press-conf-block press-conf-block--animate" id="conf-dortmund">
     <div class="press-conf-hero">
       <div class="press-conf-bg" style="--confHero:url('images/firstconf.jpg');"></div>
       <div class="press-conf-overlay"></div>
@@ -486,23 +473,8 @@
       </div>
     </div>
 
-  <div class="press-quote-section">
-  <div class="press-quote-inner">
-
-    <p class="press-context" data-i18n="conf1Context">UEFA Champions League · Quarter-final</p>
-
-    <h3 class="press-quote">
-      <span class="quote-accent" data-i18n="conf1QuoteAccent">“Who thinks I don’t know how to play,</span>
-      <span class="quote-main" data-i18n="conf1QuoteMain">they have no idea."</span>
-    </h3>
-
-    <p class="press-meta" data-i18n="conf1Meta">— Gavi, UEFA Champions League</p>
-
-  </div>
-</div>
-
-<div class="press-transcript-wrap">
-  <article class="press-transcript">
+    <div class="press-transcript-wrap">
+      <article class="press-transcript reveal">
 
     <h4 class="transcript-title" data-i18n="transcriptTitle">Full press conference transcript</h4>
 
@@ -523,7 +495,7 @@
     </div>
   </div>
 
-  <div class="press-conf-block" id="conf-athletic">
+  <div class="press-conf-block press-conf-block--animate" id="conf-athletic">
     <div class="press-conf-hero press-conf-hero--alt">
       <div class="press-conf-bg" style="--confHero:url('images/gavi-interview.jpg');"></div>
       <div class="press-conf-overlay"></div>
@@ -532,18 +504,8 @@
         <h3 class="conf-title" data-i18n="conf2Title">The injury was really tough — but I never stopped believing</h3>
       </div>
     </div>
-    <div class="press-quote-section press-quote-section--dark">
-      <div class="press-quote-inner">
-        <p class="press-context" data-i18n="conf2Context">La Liga · Post-match press conference</p>
-        <h3 class="press-quote">
-          <span class="quote-accent" data-i18n="conf2QuoteAccent">"The injury was really tough.</span>
-          <span class="quote-main" data-i18n="conf2QuoteMain">But I never stopped believing I would come back."</span>
-        </h3>
-        <p class="press-meta" data-i18n="conf2Meta">— Gavi, post-match</p>
-      </div>
-    </div>
     <div class="press-transcript-wrap">
-      <article class="press-transcript">
+      <article class="press-transcript reveal">
         <h4 class="transcript-title" data-i18n="transcriptTitle">Full press conference transcript</h4>
         <p data-i18n="conf2Intro">Following his return from a long-term injury, Gavi spoke emotionally about his recovery and the support from the team and fans.</p>
         <p data-i18n="conf2P1">"What hurt me the most was seeing my teammates and not being able to play. But right now, all I want is to keep helping the team and enjoying every minute on the pitch."</p>
@@ -553,13 +515,21 @@
     </div>
   </div>
 
-  <div class="press-quote-card reveal">
-    <div class="press-quote-card-inner">
-      <p class="press-quote-card-kicker" data-i18n="conf3Kicker">Ahead of Champions League quarter-final</p>
-      <h3 class="press-quote-card-title" data-i18n="conf3Title">We're having a great season but we're not unbeatable</h3>
-      <blockquote class="press-quote-card-quote" data-i18n="conf3Quote">"We are putting in a great season but we don't feel unbeatable. In football you can't always win. Every day I try to improve."</blockquote>
-      <p class="press-quote-card-meta" data-i18n="conf3Meta">— Gavi, FC Barcelona</p>
-      <p class="press-quote-card-source" data-i18n="conf3Source">Source: fcbarcelona.com</p>
+  <div class="press-conf-block press-conf-block--animate" id="conf-third">
+    <div class="press-conf-hero">
+      <div class="press-conf-bg" style="--confHero:url('images/firstconf.jpg');"></div>
+      <div class="press-conf-overlay"></div>
+      <div class="press-conf-inner reveal">
+        <p class="conf-kicker" data-i18n="conf3Kicker">Ahead of Champions League quarter-final</p>
+        <h3 class="conf-title" data-i18n="conf3Title">We're having a great season but we're not unbeatable</h3>
+      </div>
+    </div>
+    <div class="press-transcript-wrap">
+      <article class="press-transcript reveal">
+        <h4 class="transcript-title" data-i18n="transcriptTitle">Full press conference transcript</h4>
+        <p data-i18n="conf3Quote">"We are putting in a great season but we don't feel unbeatable. In football you can't always win. Every day I try to improve."</p>
+        <p class="press-source" data-i18n="conf3Source">Source: fcbarcelona.com</p>
+      </article>
     </div>
   </div>
 

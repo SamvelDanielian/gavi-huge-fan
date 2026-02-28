@@ -127,7 +127,36 @@ const translations = {
     conf3Title: "We're having a great season but we're not unbeatable",
     conf3Quote: "We are putting in a great season but we don't feel unbeatable. In football you can't always win. Every day I try to improve.",
     conf3Meta: "— Gavi, FC Barcelona",
-    conf3Source: "Source: fcbarcelona.com"
+    conf3Source: "Source: fcbarcelona.com",
+
+    gaviHeroTitle: "WELCOME TO GAVI'S WORLD",
+    gaviHeroSubtitle: "Everything about Pablo Gavi in one place",
+    alltimeKicker: "ALL-TIME STATS",
+    alltimeTitle: "Numbers that already feel unreal",
+    alltimeSubtitle: "Senior competitive matches · As of December 2025",
+    alltimeTagClub: "CLUB",
+    alltimeTagCountry: "COUNTRY",
+    alltimeTitleBarca: "FC Barcelona",
+    alltimeTitleSpain: "Spain National Team",
+    statAppearances: "Appearances",
+    statGoals: "Goals",
+    statAssists: "Assists",
+    statTrophies: "Trophies",
+    statCaps: "Caps",
+    statWorldCupGoal: "World Cup Goal",
+    alltimeNoteBarca: "Data from official source with Barça first team: transfermarkt.com",
+    alltimeNoteSpain: "Data from official source with Spain national team: transfermarkt.com",
+    bioKicker: "BIOGRAPHY",
+    bioTitle: "From Los Palacios to the world",
+    bioSubtitle: "The story of how a kid from a small Andalusian town became the fearless heart of Barcelona and Spain.",
+    familyKicker: "FAMILY",
+    familyTitle: "The people behind Pablo",
+    family01Tag: "01 — PARENTS",
+    family01Heading: "Pablo Paez & Aurora Gavira",
+    family02Tag: "02 — SISTER",
+    family02Heading: "Pablo's sister",
+    family03Tag: "03 — GIRLFRIEND",
+    family03Heading: "Anita Pelayo"
   },
 
   es: {
@@ -237,7 +266,36 @@ const translations = {
     conf3Title: "Hacemos una gran temporada pero no somos imbatibles",
     conf3Quote: "Estamos haciendo una gran temporada pero no nos sentimos imbatibles. En el fútbol no siempre se puede ganar. Cada día intento mejorar.",
     conf3Meta: "— Gavi, FC Barcelona",
-    conf3Source: "Fuente: fcbarcelona.com"
+    conf3Source: "Fuente: fcbarcelona.com",
+
+    gaviHeroTitle: "BIENVENIDO AL MUNDO DE GAVI",
+    gaviHeroSubtitle: "Todo sobre Pablo Gavi en un solo lugar",
+    alltimeKicker: "ESTADÍSTICAS TOTALES",
+    alltimeTitle: "Números que ya parecen irreales",
+    alltimeSubtitle: "Partidos oficiales · Diciembre 2025",
+    alltimeTagClub: "CLUB",
+    alltimeTagCountry: "SELECCIÓN",
+    alltimeTitleBarca: "FC Barcelona",
+    alltimeTitleSpain: "Selección de España",
+    statAppearances: "Partidos",
+    statGoals: "Goles",
+    statAssists: "Asistencias",
+    statTrophies: "Títulos",
+    statCaps: "Internacional",
+    statWorldCupGoal: "Gol Mundial",
+    alltimeNoteBarca: "Datos oficiales con el primer equipo del Barça: transfermarkt.com",
+    alltimeNoteSpain: "Datos oficiales con la selección española: transfermarkt.com",
+    bioKicker: "BIOGRAFÍA",
+    bioTitle: "De Los Palacios al mundo",
+    bioSubtitle: "La historia de cómo un niño de un pueblo andaluz se convirtió en el corazón del Barça y de España.",
+    familyKicker: "FAMILIA",
+    familyTitle: "La gente detrás de Pablo",
+    family01Tag: "01 — PADRES",
+    family01Heading: "Pablo Páez y Aurora Gavira",
+    family02Tag: "02 — HERMANA",
+    family02Heading: "La hermana de Pablo",
+    family03Tag: "03 — PAREJA",
+    family03Heading: "Anita Pelayo"
   }
 };
 
@@ -717,6 +775,14 @@ const familyObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.3 });
 
 storyBlocks.forEach(block => familyObserver.observe(block));
+
+const pressTranscripts = document.querySelectorAll(".press-transcript");
+const pressTranscriptObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add("in-view");
+  });
+}, { threshold: 0.2 });
+pressTranscripts.forEach(el => pressTranscriptObserver.observe(el));
 
 window.addEventListener("scroll", () => {
   const section = document.querySelector(".family-section");
