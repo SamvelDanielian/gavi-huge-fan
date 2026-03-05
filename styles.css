@@ -235,6 +235,21 @@ body {
   }
 }
 
+/* Edits page: crop from top so the head is fully in frame, slightly zoom in */
+.edits-page .hero .hero-image {
+  object-position: center 42%;
+  animation: heroZoomEdits 12s ease-out forwards;
+}
+
+@keyframes heroZoomEdits {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.12);
+  }
+}
+
 .hero-content {
   position: absolute;
   top: 60%;
